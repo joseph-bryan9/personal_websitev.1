@@ -1,0 +1,205 @@
+/* Reset all browser default styles */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap");
+
+/* My default styles */
+h1 {
+  font-family: "Poppins", sans-serif;
+}
+
+p,
+label,
+h2,
+button {
+  font-family: "Roboto", sans-serif;
+}
+
+/* Start of styles */
+.container {
+  /* background: rgb(0, 0, 0, 0.9); */
+  background: #100e17;
+  color: #fff;
+}
+
+/* Header Section */
+.header-section {
+  width: 100%;
+  height: auto;
+  padding: 25px;
+}
+
+.header-section .header-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+/* Header - Burger Menu Icon Styles */
+.header-section .header-grid .burger-menu {
+  position: relative;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  justify-self: end;
+}
+
+.header-section .header-grid .burger-menu:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header-section .header-grid .burger-menu > div {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+}
+
+.header-section .header-grid .burger-menu:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Header - Burger Menu Icon Styles (Toggle click) */
+.header-section.active .header-grid .burger-menu:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+}
+
+.header-section.active .header-grid .burger-menu > div {
+  display: none;
+}
+
+.header-section.active .header-grid .burger-menu:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+/* Banner section */
+.banner-section {
+  height: 100vh;
+  padding: 20px;
+}
+
+.banner-section .banner-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.banner-section .banner-container p,
+h1 {
+  line-height: 30px;
+  margin-bottom: 10px;
+}
+
+.banner-section .banner-container p {
+  font-size: 18px;
+}
+
+.banner-section .banner-container h1 {
+  font-size: 25px;
+}
+
+/* Project Section */
+.project-section {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.project-section .project-container {
+  display: flex;
+  flex-direction: column;
+}
+
+.project-section .project-container .project-card {
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  width: 100%;
+  background-color: #17141d;
+  border-radius: 10px;
+  box-shadow: -1rem 0 3rem #000;
+  transition: 0.4s ease-out;
+  position: relative;
+  left: 0px;
+  padding: 20px;
+  margin: 30px 0;
+}
+
+.project-section .project-container .project-card .project-title {
+  font-family: "Poppins", sans-serif;
+  text-align: center;
+}
+
+.project-section .project-container .project-card .bar {
+  background-color: #2e3033;
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;
+  margin: 15px 0;
+}
+
+.project-section .project-container .project-card img {
+  width: 100%;
+  height: auto;
+}
+
+.project-section .project-container .project-card img:hover {
+  transform: scale(1.2);
+  transition: 0.8s ease-in-out;
+}
+
+.project-section .project-container .project-card p,
+h3 {
+  line-height: 25px;
+  letter-spacing: 1px;
+}
+
+.project-section .project-container .project-card:hover {
+  transform: translateY(-10px);
+  transition: 0.4s ease-out;
+}
+
+/* About Section */
+.about-section {
+  padding: 20px;
+}
+
+/* Skills Section */
+.skills-section {
+  padding: 20px;
+}
+
+/* Cotnact Section */
+.contact-section {
+  padding: 20px;
+}
+
+/* Footer Section */
+footer {
+  padding: 20px;
+}
