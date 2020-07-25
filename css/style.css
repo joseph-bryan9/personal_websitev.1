@@ -23,6 +23,10 @@ textarea,
   font-family: "Roboto", sans-serif;
 }
 
+body {
+  overflow-x: hidden;
+}
+
 /* Start of styles */
 .container {
   /* background: rgb(0, 0, 0, 0.9); */
@@ -126,7 +130,7 @@ textarea,
 /* Navigation section */
 .nav-section {
   width: 75%;
-  height: 100vh;
+  height: 100%;
   padding: 20px;
   position: absolute;
   top: 0;
@@ -136,19 +140,29 @@ textarea,
   display: flex;
   flex-direction: column;
   align-items: center;
+  transform: translateX(500px);
+  -webkit-transition: 0.3s ease-in-out;
+  -moz-transition: 0.3s ease-in-out;
+  -ms-transition: 0.3s ease-in-out;
+  -o-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.nav-section.show {
+  transform: none;
 }
 
 /* Navigation section - Burger Menu Icon Styles */
 .nav-section .burger-menu {
-  position: absolute;
+  position: fixed;
   width: 30px;
   height: 30px;
   cursor: pointer;
   justify-self: end;
   top: 0;
   right: 0;
-  margin-top: 20px;
-  margin-right: 20px;
+  margin-top: 25px;
+  margin-right: 25px;
 }
 
 .nav-section .burger-menu:before {

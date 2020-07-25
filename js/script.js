@@ -29,11 +29,18 @@ window,
 /* Toggle X icon on burger menu */
 
 function toggleBurgerMenu() {
-  var headerSection = document.querySelector(".header-section");
+  // var headerSection = document.querySelector(".header-section");
   var navSection = document.querySelector(".nav-section");
-  var container = document.querySelector(".container");
+  // var container = document.querySelector(".container");
 
-  headerSection.classList.toggle("active");
+  // headerSection.classList.toggle("active");
   navSection.classList.toggle("active");
-  container.classList.toggle("active");
+  navSection.classList.toggle("show");
+  // container.classList.toggle("active");
 }
+
+// document
+//   .querySelector(".burger-menu")
+//   .addEventListener("click", () =>
+//     document.querySelector(".nav-section").classList.toggle("show")
+//   );
