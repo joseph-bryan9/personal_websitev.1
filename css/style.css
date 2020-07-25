@@ -17,7 +17,9 @@ h1 {
 p,
 label,
 h2,
-button {
+button,
+textarea,
+::placeholder {
   font-family: "Roboto", sans-serif;
 }
 
@@ -28,11 +30,26 @@ button {
   color: #fff;
 }
 
+/* Move container to the left side by Toggle */
+/* .container.active {
+  transform: translateX(-100px);
+} */
+
 /* Header Section */
 .header-section {
+  background: #100e17;
   width: 100%;
   height: auto;
   padding: 25px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  -webkit-transition: top 0.3s ease-in-out;
+  -moz-transition: top 0.3s ease-in-out;
+  -ms-transition: top 0.3s ease-in-out;
+  -o-transition: top 0.3s ease-in-out;
+  transition: top 0.3s ease-in-out;
+  z-index: 5;
 }
 
 .header-section .header-grid {
@@ -84,6 +101,11 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(45deg);
+  /* -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; */
 }
 
 .header-section.active .header-grid .burger-menu > div {
@@ -94,6 +116,201 @@ button {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
+  /* -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; */
+}
+
+/* Navigation section */
+.nav-section {
+  width: 75%;
+  height: 100vh;
+  padding: 20px;
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 6;
+  background: #17141d;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Navigation section - Burger Menu Icon Styles */
+.nav-section .burger-menu {
+  position: absolute;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  justify-self: end;
+  top: 0;
+  right: 0;
+  margin-top: 20px;
+  margin-right: 20px;
+}
+
+.nav-section .burger-menu:before {
+  content: "";
+  position: absolute;
+  top: 5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-section .burger-menu > div {
+  content: "";
+  position: absolute;
+  top: 14px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+}
+
+.nav-section .burger-menu:after {
+  content: "";
+  position: absolute;
+  bottom: 5px;
+  width: 100%;
+  height: 2px;
+  background: #fff;
+  text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+}
+
+/* Navigation site - Burger Menu Icon Styles (Toggle click) */
+.nav-section.active .burger-menu:before {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(45deg);
+  /* -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; */
+}
+
+.nav-section.active .burger-menu > div {
+  display: none;
+}
+
+.nav-section.active .burger-menu:after {
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%) rotate(-45deg);
+  /* -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out; */
+}
+
+.nav-section ul {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  list-style-type: none;
+  margin-top: 100px;
+}
+
+.nav-section ul > li {
+  padding: 15px 0;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.nav-section .nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 18px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  display: inline-block;
+}
+
+.nav-section ul > li:hover {
+  transform: translateY(-10px);
+}
+
+.nav-section .nav-links:after {
+  display: block;
+  content: "";
+  padding-top: 8px;
+  border-bottom: 3px solid #e0bb20;
+  transform: scaleX(0);
+  -webkit-transition: transform 0.9s ease-in-out;
+  -moz-transition: transform 0.9s ease-in-out;
+  -ms-transition: transform 0.9s ease-in-out;
+  -o-transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+}
+
+.nav-section .nav-links:hover:after {
+  transform: scaleX(1);
+}
+
+.nav-section .nav-links:after {
+  transform-origin: 0% 50%;
+}
+
+.nav-section .social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.nav-section .social-medias > a {
+  margin: 0 15px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
+    brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.nav-section .social-medias > a:hover {
+  transform: scale(1.2);
+}
+
+.nav-section .social-medias .github-logo {
+  background: url("../assets/svg/github-logo.svg");
+  background-size: contain;
+}
+
+.nav-section .social-medias .linkedin-logo {
+  background: url("../assets/svg/linkedin-logo.svg");
+  background-size: contain;
+}
+
+.nav-section .social-medias .twitter-logo {
+  background: url("../assets/svg/twitter-logo.svg");
+  background-size: contain;
+}
+
+.nav-section .social-medias .ig-logo {
+  background: url("../assets/svg/ig-logo.svg");
+  background-size: contain;
+}
+
+.nav-section p {
+  text-align: center;
+  font-size: 12px;
+  margin: 20px 0;
 }
 
 /* Banner section */
@@ -106,7 +323,7 @@ button {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 70vh;
+  height: 90vh;
 }
 
 .banner-section .banner-container p,
@@ -116,19 +333,80 @@ h1 {
 }
 
 .banner-section .banner-container p {
-  font-size: 18px;
-}
-
-.banner-section .banner-container h1 {
   font-size: 25px;
 }
 
-.banner-section .scroll-down {
-  height: 15vh;
+.banner-section .banner-container h1 {
+  font-size: 49px;
+  line-height: 65px;
+}
+
+.banner-section .banner-container .social-medias {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 100px;
+}
+
+.banner-section .banner-container .social-medias > a {
+  margin: 0 15px;
+  width: 23px;
+  height: 23px;
+  display: inline-block;
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
+    brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+.banner-section .banner-container .social-medias > a:hover {
+  transform: scale(1.2);
+}
+
+.banner-section .banner-container .social-medias .github-logo {
+  background: url("../assets/svg/github-logo.svg");
+  background-size: contain;
+}
+
+.banner-section .banner-container .social-medias .linkedin-logo {
+  background: url("../assets/svg/linkedin-logo.svg");
+  background-size: contain;
+}
+
+.banner-section .banner-container .social-medias .twitter-logo {
+  background: url("../assets/svg/twitter-logo.svg");
+  background-size: contain;
+}
+
+.banner-section .banner-container .social-medias .ig-logo {
+  background: url("../assets/svg/ig-logo.svg");
+  background-size: contain;
+}
+
+.banner-section .scroll-down-container {
+  height: 5vh;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
   align-items: flex-end;
+  animation: updown 6s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-1%);
+  }
+
+  50% {
+    transform: translateY(1%);
+  }
+
+  100% {
+    transform: translateY(-1%);
+  }
 }
 
 .banner-section a {
@@ -318,7 +596,6 @@ span {
 }
 
 .skills-section .skills-grid .skills-flex:hover p {
-  color: #e0bb20;
   -webkit-transition: 0.5s ease-in-out;
   -moz-transition: 0.5s ease-in-out;
   -ms-transition: 0.5s ease-in-out;
@@ -369,6 +646,12 @@ textarea {
   transition: 0.5s ease-in-out;
 }
 
+.contact-section form textarea {
+  resize: vertical;
+  max-height: 300px;
+  min-height: 100px;
+}
+
 .contact-section form input:focus,
 textarea:focus {
   outline: none;
@@ -376,6 +659,50 @@ textarea:focus {
   background: #fff;
   color: #100e17;
   border-bottom: 3px solid #e0bb20;
+}
+
+/* Place holder styles */
+textarea::-webkit-input-placeholder {
+  font-size: 13px;
+  color: rgb(149, 147, 151, 0.7);
+}
+
+textarea:focus::-webkit-input-placeholder {
+  font-size: 13px;
+  color: #000;
+}
+
+/* Firefox < 19 */
+textarea:-moz-placeholder {
+  font-size: 13px;
+  color: rgb(149, 147, 151, 0.7);
+}
+
+textarea:focus:-moz-placeholder {
+  font-size: 13px;
+  color: #000;
+}
+
+/* Firefox > 19 */
+textarea::-moz-placeholder {
+  font-size: 13px;
+  color: rgb(149, 147, 151, 0.7);
+}
+
+textarea:focus::-moz-placeholder {
+  font-size: 13px;
+  color: #000;
+}
+
+/* Internet Explorer 10 */
+textarea:-ms-input-placeholder {
+  font-size: 13px;
+  color: rgb(149, 147, 151, 0.7);
+}
+
+textarea:focus:-ms-input-placeholder {
+  font-size: 13px;
+  color: #000;
 }
 
 .contact-section form .button-submit {
@@ -401,10 +728,129 @@ textarea:focus {
   transform: translateY(-5px);
 }
 
+.contact-section form .button-submit > i {
+  margin-left: 3px;
+  animation: sideways 1.5s ease-in-out infinite;
+}
+
+@keyframes sideways {
+  0% {
+    transform: translatex(-15%);
+  }
+
+  50% {
+    transform: translatex(15%);
+  }
+
+  100% {
+    transform: translatex(-15%);
+  }
+}
+
 /* Footer Section */
 footer {
   padding: 30px 20px;
   text-align: center;
   letter-spacing: 1px;
   font-size: 12px;
+}
+
+footer .social-medias {
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+footer .social-medias > a {
+  margin: 0 10px;
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
+    brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
+  -webkit-transition: 0.5s ease-in-out;
+  -moz-transition: 0.5s ease-in-out;
+  -ms-transition: 0.5s ease-in-out;
+  -o-transition: 0.5s ease-in-out;
+  transition: 0.5s ease-in-out;
+}
+
+footer .social-medias > a:hover {
+  transform: scale(1.2);
+}
+
+footer .social-medias .github-logo {
+  background: url("../assets/svg/github-logo.svg");
+  background-size: contain;
+}
+
+footer .social-medias .linkedin-logo {
+  background: url("../assets/svg/linkedin-logo.svg");
+  background-size: contain;
+}
+
+footer .social-medias .twitter-logo {
+  background: url("../assets/svg/twitter-logo.svg");
+  background-size: contain;
+}
+
+footer .social-medias .ig-logo {
+  background: url("../assets/svg/ig-logo.svg");
+  background-size: contain;
+}
+
+footer p {
+  padding: 5px 0;
+  margin: 5px 0;
+}
+
+footer .scroll-up {
+  border: 1px solid #e0bb20;
+  border-radius: 3px;
+  background: #e0bb20;
+  width: 30px;
+  height: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  bottom: 40px;
+  cursor: pointer;
+  right: 2.5%;
+  text-decoration: none;
+  -webkit-transition: 0.2s ease-in-out;
+  -moz-transition: 0.2s ease-in-out;
+  -ms-transition: 0.2s ease-in-out;
+  -o-transition: 0.2s ease-in-out;
+  transition: 0.2s ease-in-out;
+  opacity: 0;
+  pointer-events: none;
+}
+
+footer .scroll-up:hover {
+  transform: translateY(-7px);
+}
+
+footer .scroll-up.active {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+footer .scroll-up > i {
+  color: #100e17;
+  animation: updown 2.5s ease-in-out infinite;
+}
+
+@keyframes updown {
+  0% {
+    transform: translateY(-30%);
+  }
+
+  50% {
+    transform: translateY(30%);
+  }
+
+  100% {
+    transform: translateY(-30%);
+  }
 }
