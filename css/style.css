@@ -23,15 +23,16 @@ textarea,
   font-family: "Roboto", sans-serif;
 }
 
-body {
+/* body {
   overflow-x: hidden;
-}
+} */
 
 /* Start of styles */
 .container {
-  /* background: rgb(0, 0, 0, 0.9); */
   background: #100e17;
   color: #fff;
+  min-width: 320px;
+  width: 100%;
 }
 
 /* Move container to the left side by Toggle */
@@ -62,12 +63,31 @@ body {
 }
 
 /* Header - Burger Menu Icon Styles */
+.header-section .header-grid .toggler {
+  position: absolute;
+  top: 0;
+  right: 0;
+  z-index: 2;
+  cursor: pointer;
+  width: 30px;
+  height: 30px;
+  opacity: 0;
+  margin-top: 25px;
+  margin-right: 25px;
+}
+
 .header-section .header-grid .burger-menu {
   position: relative;
   width: 30px;
   height: 30px;
   cursor: pointer;
   justify-self: end;
+
+  -webkit-transition: top 0.4s ease-in-out;
+  -moz-transition: top 0.4s ease-in-out;
+  -ms-transition: top 0.4s ease-in-out;
+  -o-transition: top 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out;
 }
 
 .header-section .header-grid .burger-menu:before {
@@ -88,6 +108,11 @@ body {
   height: 2px;
   background: #fff;
   text-shadow: 1px 3px 6px rgba(0, 0, 0, 0.5), 1px 13px 10px rgba(0, 0, 0, 0.4);
+  -webkit-transition: top 0.4s ease-in-out;
+  -moz-transition: top 0.4s ease-in-out;
+  -ms-transition: top 0.4s ease-in-out;
+  -o-transition: top 0.4s ease-in-out;
+  transition: top 0.4s ease-in-out;
 }
 
 .header-section .header-grid .burger-menu:after {
@@ -101,6 +126,17 @@ body {
 }
 
 /* Header - Burger Menu Icon Styles (Toggle click) */
+/* Toggler Animation */
+.header-section.active
+  .header-grid
+  .toggler:checked
+  + .header-section
+  .header-grid
+  .burger-menu
+  > div {
+  transform: rotate(135deg);
+}
+
 .header-section.active .header-grid .burger-menu:before {
   top: 50%;
   left: 50%;
@@ -129,27 +165,30 @@ body {
 
 /* Navigation section */
 .nav-section {
-  width: 75%;
+  width: 70%;
   height: 100%;
   padding: 20px;
-  position: absolute;
+  position: fixed;
   top: 0;
-  right: 0;
+  right: -500px;
   z-index: 6;
   background: #17141d;
   display: flex;
   flex-direction: column;
   align-items: center;
-  transform: translateX(500px);
   -webkit-transition: 0.3s ease-in-out;
   -moz-transition: 0.3s ease-in-out;
   -ms-transition: 0.3s ease-in-out;
   -o-transition: 0.3s ease-in-out;
   transition: 0.3s ease-in-out;
+  opacity: 0;
 }
 
 .nav-section.show {
-  transform: none;
+  /* right: -14.5%; */
+  right: 0;
+  position: fixed;
+  opacity: 1;
 }
 
 /* Navigation section - Burger Menu Icon Styles */
@@ -337,7 +376,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  height: 90vh;
+  height: 85vh;
 }
 
 .banner-section .banner-container p,
@@ -348,24 +387,26 @@ h1 {
 
 .banner-section .banner-container p {
   font-size: 25px;
+  margin: 15px 0;
 }
 
 .banner-section .banner-container h1 {
-  font-size: 49px;
-  line-height: 65px;
+  font-size: 30px;
+  line-height: 40px;
+  margin: 15px 0;
 }
 
 .banner-section .banner-container .social-medias {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 100px;
+  /* margin-top: 100px; */
 }
 
 .banner-section .banner-container .social-medias > a {
   margin: 0 15px;
-  width: 23px;
-  height: 23px;
+  width: 20px;
+  height: 20px;
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
@@ -441,6 +482,7 @@ h1 {
 .project-section .project-container {
   display: flex;
   flex-direction: column;
+  margin: 0 10px;
 }
 
 .project-section .project-container .project-card {
