@@ -34,9 +34,16 @@ function toggleBurgerMenu() {
   // var container = document.querySelector(".container");
 
   // headerSection.classList.toggle("active");
-  navSection.classList.toggle("active");
+  // navSection.classList.toggle("active");
   navSection.classList.toggle("show");
   // container.classList.toggle("active");
+}
+
+function toggleBurgerMenu_AfterCatalogClick() {
+  setTimeout(function () {
+    var navSection = document.querySelector(".nav-section");
+    navSection.classList.toggle("show");
+  }, 3000);
 }
 
 // document
