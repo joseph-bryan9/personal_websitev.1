@@ -1,30 +1,11 @@
 /* The switch - the box around the slider */
-/* .switch {
-  position: relative;
-  display: inline-block;
-  width: 60px;
-  height: 24px;
-}
-
-.slider:before {
-  position: absolute;
-  content: "";
-  height: 20px;
-  width: 20px;
-  left: 8px;
-  bottom: 4px;
-  top: 2px;
-  background-color: white;
-  -webkit-transition: 0.4s;
-  transition: 0.4s;
-} */
-
 .switch {
   position: relative;
   display: inline-block;
   width: 60px;
   height: 24px;
   margin-top: 2.5px;
+  box-shadow: 0rem 0 3rem #000;
 }
 
 .switch input {
@@ -40,7 +21,6 @@
   left: 0;
   right: 0;
   bottom: 0;
-  /* background-color: #ccc; */
   background-color: #e0bb20;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -61,13 +41,11 @@
 }
 
 input:checked + .slider {
-  /* background-color: #e0bb20; */
   background-color: #ccc;
 }
 
 input:focus + .slider {
   box-shadow: 0 0 1px #e0bb20;
-  /* background-color: #ccc; */
 }
 
 input:checked + .slider:before {
