@@ -25,11 +25,13 @@
       <!-- Header Section -->
       <section class="header-section">
         <div class="header-grid">
-          <!-- <a href=""><img src="" alt="" /></a> -->
-          <label class="switch">
-            <input type="checkbox" />
-            <span class="slider round"></span>
-          </label>
+          <div class="toggler-flex">
+            <label class="switch">
+              <input type="checkbox" />
+              <span class="slider round"></span>
+            </label>
+            <div class="pointer-left"></div>
+          </div>
           <input type="checkbox" class="toggler" onclick="toggleBurgerMenu()" />
           <div class="burger-menu">
             <div></div>
@@ -108,7 +110,7 @@
           <p>Hi, I'm Joseph Seña</p>
           <h1>
             I build ideas into working artworks.
-            <!-- <span class="artist-palette">&#127912;</span> -->
+            <span class="artist-palette">&#127912;</span>
           </h1>
           <div class="social-medias">
             <a href="" class="github-logo"></a>
@@ -186,16 +188,15 @@
       </section>
 
       <!-- About Section -->
-      <section id="about" class="about-section" data-aos="fade-left">
+      <section id="about" class="about-section" data-aos="fade-right">
         <div><h1>About me</h1></div>
         <div class="about-container">
           <div>
             <p>Web Developer | <span>Web Designer</span></p>
           </div>
           <div>
-            <p>
-              Hello! I'm Joseph, a developer based in the Philippines.
-            </p>
+            <p>Hello! <span class="wave">👋</span></p>
+            <p>I'm Joseph, a developer based in the Philippines.</p>
             <p>
               I've always been fascinated about the possibilities of building
               almost anything through technology.
@@ -211,7 +212,7 @@
       </section>
 
       <!-- Skills Section -->
-      <section id="skills" class="skills-section" data-aos="fade-left">
+      <section id="skills" class="skills-section" data-aos="fade-right">
         <div><h1>Recent technologies I've been working with,</h1></div>
         <div class="skills-grid">
           <div class="skills-flex">
@@ -266,7 +267,7 @@
       </section>
 
       <!-- Contact Section -->
-      <section id="contact" class="contact-section" data-aos="fade-left">
+      <section id="contact" class="contact-section" data-aos="fade-right">
         <div>
           <h1>Get in touch</h1>
           <p class="note">Let's build your awesome project today!</p>

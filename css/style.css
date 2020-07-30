@@ -23,9 +23,9 @@ textarea,
   font-family: "Roboto", sans-serif;
 }
 
-/* body {
+body {
   overflow-x: hidden;
-} */
+}
 
 /* Start of styles */
 .container {
@@ -33,6 +33,7 @@ textarea,
   color: #fff;
   min-width: 320px;
   width: 100%;
+  /* overflow-x: hidden; */
 }
 
 /* Move container to the left side by Toggle */
@@ -60,6 +61,37 @@ textarea,
 .header-section .header-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
+}
+
+.header-section .header-grid .toggler-flex {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.header-section .header-grid .toggler-flex .pointer-left {
+  width: 25px;
+  height: 25px;
+  background: url("../assets/svg/point-to-left.svg");
+  background-size: contain;
+  filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
+    brightness(105%) contrast(102%);
+  margin: 5px 15px;
+  animation: sideways 1.5s ease-in-out infinite;
+}
+
+@keyframes sideways {
+  0% {
+    transform: translateX(-15%);
+  }
+
+  50% {
+    transform: translateX(15%);
+  }
+
+  100% {
+    transform: translateX(-15%);
+  }
 }
 
 /* Header - Burger Menu Icon Styles */
@@ -378,6 +410,41 @@ h1 {
   margin: 15px 0;
 }
 
+.banner-section .banner-container h1 > .artist-palette {
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
+}
+
 .banner-section .banner-container .social-medias {
   display: flex;
   flex-direction: row;
@@ -583,6 +650,43 @@ span {
 
 .about-section .about-container span {
   color: #e0bb20;
+}
+
+.about-section .about-container .wave {
+  margin: 0;
+  font-size: 20px;
+  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-duration: 2.5s; /* Change to speed up or slow down */
+  animation-iteration-count: infinite; /* Never stop waving :) */
+  transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
+  display: inline-block;
+}
+
+@keyframes wave-animation {
+  0% {
+    transform: rotate(0deg);
+  }
+  10% {
+    transform: rotate(14deg);
+  } /* The following five values can be played with to make the waving more or less extreme */
+  20% {
+    transform: rotate(-8deg);
+  }
+  30% {
+    transform: rotate(14deg);
+  }
+  40% {
+    transform: rotate(-4deg);
+  }
+  50% {
+    transform: rotate(10deg);
+  }
+  60% {
+    transform: rotate(0deg);
+  } /* Reset for the last half to pause */
+  100% {
+    transform: rotate(0deg);
+  }
 }
 
 .about-section .about-container .design {
@@ -860,7 +964,7 @@ footer .scroll-up {
   -moz-transition: 0.2s ease-in-out;
   -ms-transition: 0.2s ease-in-out;
   -o-transition: 0.2s ease-in-out;
-  transition: 0.2s ease-in-out;
+  transition: 0.4s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
