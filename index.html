@@ -8,6 +8,7 @@
     <!-- Styles -->
     <link rel="stylesheet" href="css/style.css" />
     <link rel="stylesheet" href="css/toggle-btn.css" />
+    <link rel="stylesheet" href="css/media-queries.css" />
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
@@ -27,7 +28,7 @@
         <div class="header-grid">
           <div class="toggler-flex">
             <label class="switch">
-              <input type="checkbox" />
+              <input type="checkbox" onclick="toggleLightTheme()" />
               <span class="slider round"></span>
             </label>
             <div class="pointer-left"></div>
@@ -119,6 +120,12 @@
             <a href="" class="ig-logo"></a>
           </div>
         </div>
+        <!-- <div class="my-email">
+          <div class="my-email-container">
+            <div class="pointer-left"></div>
+            <span>Get in touch:</span><span>josephbryan.sena@gmail.com</span>
+          </div>
+        </div> -->
         <div class="scroll-down-container">
           <a data-scroll href="#projects" class="scroll-down"
             ><i class="fa fa-chevron-down" aria-hidden="true"></i
@@ -127,7 +134,7 @@
       </section>
 
       <!-- Project Section -->
-      <section id="projects" class="project-section">
+      <section id="projects" class="project-section" data-aos="fade-right">
         <div>
           <h1>Somethings I've built,</h1>
           <p>Here are some of my projects:</p>
@@ -135,7 +142,7 @@
 
         <!-- Project 1 -->
         <div class="project-container">
-          <div class="project-card" data-aos="zoom-in-right">
+          <div class="project-card">
             <h3 class="project-title">Coffee Shop Page</h3>
             <div class="bar"></div>
             <div>
@@ -152,7 +159,7 @@
           </div>
 
           <!-- Project 2 -->
-          <div class="project-card" data-aos="zoom-in-left">
+          <div class="project-card">
             <h3 class="project-title">Computer Manufacturing Page</h3>
             <div class="bar"></div>
             <div>
@@ -169,7 +176,7 @@
           </div>
 
           <!-- Project 3 -->
-          <div class="project-card" data-aos="zoom-in-right">
+          <div class="project-card">
             <h3 class="project-title">Technology Company Page</h3>
             <div class="bar"></div>
             <div>
@@ -203,9 +210,9 @@
             </p>
             <p>
               I love creating things that live on the Web. A goal that I'm
-              always aiming for. From <span class="design">designing</span> to
-              <span class="code">coding</span>, up to the
-              <span class="deploy">World Wide Web</span>, that is my objective.
+              always aiming for. From <span class="design">design</span> to
+              <span class="code">development</span>, up to
+              <span class="deploy">deployment</span>, that is my objective.
             </p>
           </div>
         </div>
@@ -307,7 +314,7 @@
           <a href="" class="twitter-logo"></a>
           <a href="" class="ig-logo"></a>
         </div>
-        <div><p>Design & built by Joseph Seña</p></div>
+        <div><p>Designed & built by Joseph Seña</p></div>
         <a data-scroll href="#banner" class="scroll-up">
           <i class="fa fa-chevron-up" aria-hidden="true"></i>
         </a>
@@ -336,14 +343,6 @@
         offset: 500,
         duration: 500,
       });
-    </script>
-    <!-- Nav-menu script -->
-    <script>
-      // document
-      //   .querySelector(".burger-menu")
-      //   .addEventListener("click", () =>
-      //     document.querySelector(".nav-section").classList.toggle("show")
-      //   );
     </script>
   </body>
 </html>

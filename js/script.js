@@ -14,7 +14,6 @@ window.onscroll = function () {
 var scrollBtn = document.querySelector(".scroll-up");
 
 /* When the user scrolls down 20px from the top of the document, show the button */
-
 var scrollBtn = document.querySelector(".scroll-up");
 
 window,
@@ -27,7 +26,6 @@ window,
   });
 
 /* Toggle X icon on burger menu */
-
 function toggleBurgerMenu() {
   // var headerSection = document.querySelector(".header-section");
   var navSection = document.querySelector(".nav-section");
@@ -51,3 +49,11 @@ function toggleBurgerMenu_AfterCatalogClick() {
 //   .addEventListener("click", () =>
 //     document.querySelector(".nav-section").classList.toggle("show")
 //   );
+
+// Toggle light theme
+function toggleLightTheme() {
+  const lightThemeContainer = document.querySelector(".container");
+  const lightThemeHeader = document.querySelector(".header-section");
+  lightThemeContainer.classList.toggle("light");
+  lightThemeHeader.classList.toggle("light");
+}

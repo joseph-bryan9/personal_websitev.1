@@ -44,6 +44,7 @@ body {
 /* Header Section */
 .header-section {
   background: #100e17;
+  box-shadow: 0rem 0 1rem #000;
   width: 100%;
   height: auto;
   padding: 25px;
@@ -175,22 +176,23 @@ body {
 
 /* Navigation section */
 .nav-section {
-  width: 70%;
+  width: 210px;
   height: 100%;
-  padding: 20px;
+  padding: 25px;
   position: fixed;
   top: 0;
-  right: -500px;
+  right: -999%;
   z-index: 6;
   background: #17141d;
+  box-shadow: 0rem 0 1rem #000;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  -webkit-transition: all 0.3s ease;
-  -moz-transition: all 0.3s ease;
-  -ms-transition: all 0.3s ease;
-  -o-transition: all 0.3s ease;
-  transition: all 0.3s ease;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
   opacity: 0;
 }
 
@@ -330,6 +332,10 @@ body {
   transform-origin: 0% 50%;
 }
 
+.nav-section > div:nth-child(4) {
+  margin: 0 auto;
+}
+
 .nav-section .social-medias {
   display: flex;
   flex-direction: row;
@@ -400,18 +406,18 @@ h1 {
 }
 
 .banner-section .banner-container p {
-  font-size: 25px;
+  font-size: 23px;
   margin: 15px 0;
 }
 
 .banner-section .banner-container h1 {
-  font-size: 30px;
+  font-size: 27px;
   line-height: 40px;
   margin: 15px 0;
 }
 
 .banner-section .banner-container h1 > .artist-palette {
-  animation-name: wave-animation; /* Refers to the name of your @keyframes element below */
+  animation-name: wave-animation;
   animation-duration: 2.5s; /* Change to speed up or slow down */
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
@@ -449,7 +455,7 @@ h1 {
   display: flex;
   flex-direction: row;
   justify-content: center;
-  margin-top: 20px;
+  margin-top: 50px;
 }
 
 .banner-section .banner-container .social-medias > a {
@@ -489,6 +495,16 @@ h1 {
   background: url("../assets/svg/ig-logo.svg");
   background-size: contain;
 }
+
+/* .banner-section .my-email {
+  position: absolute;
+  bottom: 60px;
+}
+
+.banner-section .my-email .my-email-container {
+  display: flex;
+  flex-direction: row;
+} */
 
 .banner-section .scroll-down-container {
   height: 5vh;
@@ -691,14 +707,17 @@ span {
 
 .about-section .about-container .design {
   color: #2e9cca;
+  font-weight: bold;
 }
 
 .about-section .about-container .code {
   color: #f76c6c;
+  font-weight: bold;
 }
 
 .about-section .about-container .deploy {
   color: #f8e9a1;
+  font-weight: bold;
 }
 
 /* Skills Section */
@@ -768,6 +787,10 @@ label,
   margin: 20px 0;
 }
 
+.contact-section form input {
+  height: 45px;
+}
+
 .contact-section form input,
 textarea {
   background: #17141d;
@@ -792,6 +815,7 @@ textarea {
   resize: vertical;
   max-height: 300px;
   min-height: 100px;
+  height: 200px;
 }
 
 .contact-section form input:focus,
@@ -859,15 +883,15 @@ textarea:focus:-ms-input-placeholder {
   background: #fff;
   color: #100e17;
   cursor: pointer;
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.4s ease-in-out;
+  -moz-transition: 0.4s ease-in-out;
+  -ms-transition: 0.4s ease-in-out;
+  -o-transition: 0.4s ease-in-out;
+  transition: 0.4s ease-in-out;
 }
 
 .contact-section form .button-submit:hover {
-  transform: translateY(-5px);
+  transform: translateY(-7px);
 }
 
 .contact-section form .button-submit > i {
@@ -980,7 +1004,7 @@ footer .scroll-up.active {
 
 footer .scroll-up > i {
   color: #100e17;
-  animation: updown 2.5s ease-in-out infinite;
+  animation: updown 1.5s ease-in-out infinite;
 }
 
 @keyframes updown {

@@ -62,3 +62,10 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
+
+/* Toggle light theme */
+.light {
+  background: #fff;
+  color: #100e17;
+  filter: none;
+}
