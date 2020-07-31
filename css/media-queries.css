@@ -511,4 +511,107 @@
   .skills-section .skills-grid .skills-flex p {
     font-size: 20px;
   }
+
+  /* Contact Section */
+  .contact-section div:nth-child(1) > h1 {
+    font-size: 30px;
+  }
+
+  .contact-section div:nth-child(1) > p {
+    font-size: 20px;
+  }
+}
+
+@media all and (min-width: 3840px) {
+  /* Banner Section */
+  .banner-section .banner-container p {
+    font-size: 80px;
+    line-height: 150px;
+  }
+
+  .banner-section .banner-container h1 {
+    font-size: 100px;
+    line-height: 150px;
+  }
+
+  .banner-section .banner-container .social-medias > a {
+    width: 50px;
+    height: 50px;
+    margin: 0 35px;
+  }
+
+  .banner-section .scroll-down-container .scroll-down {
+    font-size: 45px;
+  }
+
+  /* Project Section */
+  .project-section {
+    width: 55%;
+    margin: 70px auto;
+  }
+
+  .project-section div:nth-child(1) > h1 {
+    font-size: 60px;
+    margin: 40px 0;
+    line-height: 90px;
+  }
+
+  .project-section div:nth-child(1) > p {
+    font-size: 40px;
+    margin: 40px 0;
+  }
+
+  .project-section .project-container .project-card .project-title {
+    font-size: 35px;
+    padding: 35px 0;
+  }
+
+  .project-section .project-container .project-card p {
+    font-size: 35px;
+    line-height: 60px;
+    margin: 40px 30px;
+  }
+
+  .project-section .project-container .project-card .links {
+    padding: 35px 0;
+  }
+
+  .project-section .project-container .project-card .links > a {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px;
+  }
+
+  /* About Section */
+  .about-section {
+    width: 55%;
+    margin: 80px auto;
+  }
+
+  .about-section div:nth-child(1) > h1 {
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .about-section .about-container div > p {
+    font-size: 40px;
+    line-height: 60px;
+  }
+
+  .about-section .about-container .wave {
+    font-size: 40px;
+  }
+
+  /* Skills Section */
+  .skills-section {
+    width: 55%;
+    margin: 80px auto;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    width: 55%;
+    margin: 80px auto;
+  }
 }
