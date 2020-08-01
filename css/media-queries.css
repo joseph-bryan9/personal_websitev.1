@@ -523,6 +523,86 @@
 }
 
 @media all and (min-width: 3840px) {
+  /* Header Section */
+  .header-section .header-grid .toggler-flex {
+    left: 30%;
+  }
+
+  .header-section .header-grid .toggler-flex .pointer-left {
+    width: 45px;
+    height: 45px;
+    margin: 5px 30px;
+  }
+
+  .header-section .header-grid .toggler {
+    right: 18%;
+  }
+
+  .header-section .header-grid .burger-menu {
+    right: 18%;
+    width: 60px;
+    height: 50px;
+  }
+
+  .header-section .header-grid .burger-menu > div {
+    height: 5px;
+  }
+
+  .header-section .header-grid .burger-menu > div::before {
+    top: -20px;
+    height: 5px;
+  }
+
+  .header-section .header-grid .burger-menu > div::after {
+    top: 20px;
+    height: 5px;
+  }
+
+  /* Nav Section */
+  .nav-section {
+    width: 870px;
+  }
+
+  .nav-section .toggler {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-section .burger-menu {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-section .burger-menu > div {
+    width: 70px;
+    height: 70px;
+  }
+
+  .nav-section .burger-menu > div::before,
+  .nav-section .burger-menu > div::after {
+    width: 70px;
+    height: 5px;
+  }
+
+  .nav-section .nav-links {
+    font-size: 50px;
+  }
+
+  .nav-section ul > li {
+    padding: 50px 0;
+  }
+
+  .nav-section .social-medias > a {
+    margin: 30px 25px;
+    width: 50px;
+    height: 50px;
+  }
+
+  .nav-section p {
+    font-size: 30px;
+    margin: 40px 0;
+  }
+
   /* Banner Section */
   .banner-section .banner-container p {
     font-size: 80px;
@@ -548,6 +628,10 @@
   .project-section {
     width: 55%;
     margin: 70px auto;
+  }
+
+  .project-section .project-container {
+    grid-gap: 60px;
   }
 
   .project-section div:nth-child(1) > h1 {
@@ -585,7 +669,7 @@
   /* About Section */
   .about-section {
     width: 55%;
-    margin: 80px auto;
+    margin: 100px auto;
   }
 
   .about-section div:nth-child(1) > h1 {
@@ -606,12 +690,159 @@
   /* Skills Section */
   .skills-section {
     width: 55%;
-    margin: 80px auto;
+    margin: 100px auto;
+  }
+
+  .skills-section div:nth-child(1) > h1 {
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .skills-section .skills-grid {
+    grid-gap: 30px;
+    margin: 100px 0 0;
+  }
+
+  .skills-section .skills-grid .skills-flex img {
+    width: 130px;
+  }
+
+  .skills-section .skills-grid .skills-flex p {
+    font-size: 40px;
+    margin: 30px 0;
   }
 
   /* Contact Section */
   .contact-section {
     width: 55%;
-    margin: 80px auto;
+    margin: 100px auto;
+  }
+
+  .contact-section div:nth-child(1) > h1 {
+    font-size: 60px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .contact-section div:nth-child(1) > p {
+    font-size: 40px;
+    line-height: 50px;
+    margin-bottom: 40px;
+  }
+
+  .contact-section label,
+  ::placeholder {
+    letter-spacing: 1px;
+    font-size: 30px;
+  }
+
+  .contact-section form {
+    margin: 20px 0;
+  }
+
+  .contact-section form input {
+    height: 45px;
+    font-size: 25px;
+    height: 60px !important;
+  }
+
+  .contact-section form textarea {
+    resize: vertical;
+    max-height: 300px;
+    min-height: 60px;
+    height: 60px;
+    font-size: 25px;
+  }
+
+  /* Place holder styles */
+  textarea::-webkit-input-placeholder {
+    font-size: 25px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus::-webkit-input-placeholder {
+    font-size: 25px;
+    color: #000;
+  }
+
+  /* Firefox < 19 */
+  textarea:-moz-placeholder {
+    font-size: 25px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus:-moz-placeholder {
+    font-size: 25px;
+    color: #000;
+  }
+
+  /* Firefox > 19 */
+  textarea::-moz-placeholder {
+    font-size: 25px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus::-moz-placeholder {
+    font-size: 25px;
+    color: #000;
+  }
+
+  /* Internet Explorer 10 */
+  textarea:-ms-input-placeholder {
+    font-size: 25px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus:-ms-input-placeholder {
+    font-size: 25px;
+    color: #000;
+  }
+
+  .contact-section form .button-submit {
+    width: 70%;
+    height: 70px;
+    display: block;
+    margin: 0;
+    padding: 7px 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    font-size: 30px;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #100e17;
+    cursor: pointer;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Footer Section */
+  footer .social-medias {
+    padding: 20px 0;
+    margin: 20px 0;
+  }
+
+  footer .social-medias > a {
+    width: 50px;
+    height: 50px;
+    margin: 0 25px;
+  }
+
+  footer p {
+    padding: 20px 0;
+    margin: 20px 0;
+    font-size: 30px;
+  }
+
+  footer .scroll-up {
+    width: 60px;
+    height: 65px;
+    bottom: 100px;
+    right: 18%;
+    font-size: 30px;
   }
 }
