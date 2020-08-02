@@ -522,6 +522,9 @@
   }
 }
 
+@media all and (min-width: 2400px) {
+}
+
 @media all and (min-width: 3840px) {
   /* Header Section */
   .header-section .header-grid .toggler-flex {
