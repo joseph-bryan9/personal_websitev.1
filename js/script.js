@@ -27,14 +27,9 @@ window,
 
 /* Toggle X icon on burger menu */
 function toggleBurgerMenu() {
-  // var headerSection = document.querySelector(".header-section");
   var navSection = document.querySelector(".nav-section");
-  // var container = document.querySelector(".container");
 
-  // headerSection.classList.toggle("active");
-  // navSection.classList.toggle("active");
   navSection.classList.toggle("show");
-  // container.classList.toggle("active");
 }
 
 function toggleBurgerMenu_AfterCatalogClick() {
@@ -44,16 +39,31 @@ function toggleBurgerMenu_AfterCatalogClick() {
   }, 3000);
 }
 
-// document
-//   .querySelector(".burger-menu")
-//   .addEventListener("click", () =>
-//     document.querySelector(".nav-section").classList.toggle("show")
-//   );
-
 // Toggle light theme
 function toggleLightTheme() {
   const lightThemeContainer = document.querySelector(".container");
+  const lightThemeNav = document.querySelector(".nav-section");
   const lightThemeHeader = document.querySelector(".header-section");
+  const lightThemeBanner = document.querySelector(".banner-section");
+  const lightThemeAbout = document.querySelector(".about-section");
+  const lightThemeProject = document.querySelector(".project-section");
+  const lightThemeContact = document.querySelector(".contact-section");
+  const lightThemeFooter = document.querySelector("footer");
+  // const textColorSelector = document.querySelectorAll(":selector");
+
   lightThemeContainer.classList.toggle("light");
+  lightThemeNav.classList.toggle("light");
   lightThemeHeader.classList.toggle("light");
+  lightThemeBanner.classList.toggle("light");
+  lightThemeAbout.classList.toggle("light");
+  lightThemeProject.classList.toggle("light");
+  lightThemeContact.classList.toggle("light");
+  lightThemeFooter.classList.toggle("light");
 }
+
+// Auto expand textarea
+$("#message").on("keyup input", function () {
+  $(this)
+    .css("height", "auto")
+    .css("height", this.scrollHeight + (this.offsetHeight - this.clientHeight));
+});

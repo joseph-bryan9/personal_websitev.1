@@ -204,7 +204,7 @@
 
   /* Banner Section */
   .banner-section .banner-container {
-    width: 80%;
+    width: 730px;
     margin: 0 auto;
   }
 
@@ -351,7 +351,7 @@
 @media all and (min-width: 1331px) {
   /* Banner Section */
   .banner-section .banner-container {
-    width: 70%;
+    /* width: 70%; */
   }
 
   .banner-section .banner-container .social-medias > a {
@@ -450,7 +450,7 @@
 
   /* Banner Section */
   .banner-section .banner-container {
-    width: 50%;
+    width: 1000px;
   }
 
   .banner-section .banner-container p {
@@ -607,6 +607,10 @@
   }
 
   /* Banner Section */
+  .banner-section .banner-container {
+    width: 2000px;
+  }
+
   .banner-section .banner-container p {
     font-size: 80px;
     line-height: 150px;
@@ -615,6 +619,11 @@
   .banner-section .banner-container h1 {
     font-size: 100px;
     line-height: 150px;
+  }
+
+  .banner-section .banner-container h1 > .artist-palette {
+    width: 100px;
+    height: 100px;
   }
 
   .banner-section .banner-container .social-medias > a {
@@ -752,8 +761,6 @@
 
   .contact-section form textarea {
     resize: vertical;
-    max-height: 300px;
-    min-height: 60px;
     height: 60px;
     font-size: 25px;
   }

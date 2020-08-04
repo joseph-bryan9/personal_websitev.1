@@ -25,6 +25,7 @@ textarea,
 
 body {
   overflow-x: hidden;
+  /* transition: 5s; */
 }
 
 /* Start of styles */
@@ -40,6 +41,11 @@ body {
 /* .container.active {
   transform: translateX(-100px);
 } */
+
+::selection {
+  color: #100e17;
+  background: #e0bb20;
+}
 
 /* Header Section */
 .header-section {
@@ -422,6 +428,9 @@ h1 {
   animation-iteration-count: infinite; /* Never stop waving :) */
   transform-origin: 70% 70%; /* Pivot around the bottom-left palm */
   display: inline-block;
+  background: url(../assets/svg/palette.svg) no-repeat center center/contain;
+  width: 40px;
+  height: 40px;
 }
 
 @keyframes wave-animation {
@@ -496,15 +505,23 @@ h1 {
   background-size: contain;
 }
 
-/* .banner-section .my-email {
-  position: absolute;
-  bottom: 60px;
+.banner-section .my-email {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
 }
 
 .banner-section .my-email .my-email-container {
   display: flex;
-  flex-direction: row;
-} */
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.banner-section .my-email .my-email-container p {
+  font-size: 16px;
+  margin: 0;
+}
 
 .banner-section .scroll-down-container {
   height: 5vh;
@@ -737,7 +754,6 @@ span {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  cursor: pointer;
 }
 
 .skills-section .skills-grid .skills-flex img {
@@ -813,9 +829,12 @@ textarea {
 
 .contact-section form textarea {
   resize: vertical;
-  max-height: 300px;
-  min-height: 100px;
-  height: 200px;
+  /* max-height: 300px; */
+  /* min-height: 100px; */
+  height: 45px;
+
+  /* box-sizing: padding-box; */
+  /* overflow: hidden; */
 }
 
 .contact-section form input:focus,
