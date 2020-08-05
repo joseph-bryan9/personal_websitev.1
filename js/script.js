@@ -49,7 +49,6 @@ function toggleLightTheme() {
   const lightThemeProject = document.querySelector(".project-section");
   const lightThemeContact = document.querySelector(".contact-section");
   const lightThemeFooter = document.querySelector("footer");
-  // const textColorSelector = document.querySelectorAll(":selector");
 
   lightThemeContainer.classList.toggle("light");
   lightThemeNav.classList.toggle("light");

@@ -37,11 +37,6 @@ body {
   /* overflow-x: hidden; */
 }
 
-/* Move container to the left side by Toggle */
-/* .container.active {
-  transform: translateX(-100px);
-} */
-
 ::selection {
   color: #100e17;
   background: #e0bb20;
