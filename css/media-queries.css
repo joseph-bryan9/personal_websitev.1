@@ -523,10 +523,280 @@
 }
 
 @media all and (min-width: 2400px) {
+  /* Header Section */
+  .header-section {
+    padding: 40px;
+  }
+
+  /* .header-section .header-grid .toggler-flex {
+    left: 30%;
+  } */
+
+  .header-section .header-grid .toggler-flex .pointer-left {
+    width: 45px;
+    height: 45px;
+    margin: 5px 30px;
+  }
+
+  .header-section .header-grid .toggler {
+    right: 18%;
+    margin-top: 40px;
+  }
+
+  .header-section .header-grid .burger-menu {
+    right: 18%;
+    width: 40px;
+    height: 50px;
+    margin-top: 40px;
+  }
+
+  .header-section .header-grid .burger-menu > div {
+    height: 3px;
+  }
+
+  .header-section .header-grid .burger-menu > div::before {
+    top: -20px;
+    height: 3px;
+  }
+
+  .header-section .header-grid .burger-menu > div::after {
+    top: 20px;
+    height: 3px;
+  }
+
+  /* Banner Section */
+  .banner-section .banner-container {
+    width: 1300px;
+  }
+
+  .banner-section .banner-container p {
+    font-size: 60px;
+    margin-bottom: 70px;
+  }
+
+  .banner-section .banner-container h1 {
+    font-size: 70px;
+    margin-bottom: 50px;
+  }
+
+  .banner-section .banner-container h1 > .artist-palette {
+    width: 90px;
+    height: 90px;
+  }
+
+  .banner-section .banner-container .social-medias > a {
+    width: 40px;
+    height: 40px;
+    margin: 0 35px;
+  }
+
+  .banner-section .scroll-down-container .scroll-down {
+    font-size: 40px;
+  }
+
+  /* Project Section */
+  .project-section {
+    width: 1500px;
+  }
+
+  .project-section .project-container {
+    margin-top: 60px;
+  }
+
+  .project-section .project-container .project-card {
+    margin: 40px 0;
+  }
+
+  .project-section .project-container .project-card .project-title {
+    font-size: 25px;
+  }
+
+  .project-section .project-container .project-card p {
+    font-size: 25px;
+    line-height: 40px;
+  }
+
+  .project-section div:nth-child(1) > h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .project-section p {
+    font-size: 30px;
+  }
+
+  .project-section .project-container .project-card .links > a {
+    width: 35px;
+    height: 35px;
+  }
+
+  /* About Section */
+  .about-section {
+    width: 1500px;
+    height: 600px;
+  }
+
+  .about-section div:nth-child(1) > h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .about-section .about-container div > p {
+    font-size: 30px;
+  }
+
+  .about-section .about-container .wave {
+    font-size: 30px;
+  }
+
+  .about-section .about-container p {
+    line-height: 40px;
+  }
+
+  /* Skills Section */
+  .skills-section {
+    width: 1500px;
+    height: 600px;
+  }
+
+  .skills-section div:nth-child(1) > h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .skills-section .skills-grid .skills-flex img {
+    width: 90px;
+  }
+
+  .skills-section .skills-grid .skills-flex p {
+    font-size: 30px;
+    margin: 25px 0;
+  }
+
+  /* Contact Section */
+  .contact-section {
+    width: 1500px;
+    height: 500px;
+  }
+  .contact-section div:nth-child(1) > h1 {
+    font-size: 40px;
+    margin-bottom: 50px;
+  }
+
+  .contact-section div:nth-child(1) > p {
+    font-size: 30px;
+  }
+
+  .contact-section label,
+  ::placeholder {
+    letter-spacing: 1px;
+    font-size: 25px;
+  }
+
+  .contact-section form {
+    margin: 20px 0;
+  }
+
+  .contact-section form input {
+    height: 45px;
+    font-size: 20px;
+    height: 60px !important;
+  }
+
+  .contact-section form textarea {
+    resize: vertical;
+    height: 60px;
+    font-size: 20px;
+  }
+
+  /* Place holder styles */
+  textarea::-webkit-input-placeholder {
+    font-size: 20px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus::-webkit-input-placeholder {
+    font-size: 20px;
+    color: #000;
+  }
+
+  /* Firefox < 19 */
+  textarea:-moz-placeholder {
+    font-size: 20px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus:-moz-placeholder {
+    font-size: 20px;
+    color: #000;
+  }
+
+  /* Firefox > 19 */
+  textarea::-moz-placeholder {
+    font-size: 20px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus::-moz-placeholder {
+    font-size: 20px;
+    color: #000;
+  }
+
+  /* Internet Explorer 10 */
+  textarea:-ms-input-placeholder {
+    font-size: 20px;
+    color: rgb(149, 147, 151, 0.7);
+  }
+
+  textarea:focus:-ms-input-placeholder {
+    font-size: 20px;
+    color: #000;
+  }
+
+  .contact-section form .button-submit {
+    font-size: 25px;
+
+    width: 70%;
+    height: 60px;
+    display: block;
+    margin: 0;
+    padding: 7px 15px;
+    letter-spacing: 1px;
+    font-weight: 700;
+    border: none;
+    border-radius: 2px;
+    background: #fff;
+    color: #100e17;
+    cursor: pointer;
+    -webkit-transition: 0.4s ease-in-out;
+    -moz-transition: 0.4s ease-in-out;
+    -ms-transition: 0.4s ease-in-out;
+    -o-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+  }
+
+  /* Footer Section */
+  footer p {
+    font-size: 20px;
+  }
+
+  footer .social-medias {
+    margin: 30px 0;
+  }
+
+  footer .social-medias > a {
+    width: 35px;
+    height: 35px;
+    margin: 0px 25px;
+  }
 }
 
 @media all and (min-width: 3840px) {
   /* Header Section */
+  .header-section {
+    padding: 70px;
+  }
+
   .header-section .header-grid .toggler-flex {
     left: 30%;
   }
@@ -539,12 +809,14 @@
 
   .header-section .header-grid .toggler {
     right: 18%;
+    margin-top: 70px;
   }
 
   .header-section .header-grid .burger-menu {
     right: 18%;
     width: 60px;
     height: 50px;
+    margin-top: 70px;
   }
 
   .header-section .header-grid .burger-menu > div {
@@ -639,6 +911,7 @@
   /* Project Section */
   .project-section {
     width: 55%;
+    height: 1600px;
     margin: 70px auto;
   }
 
@@ -655,6 +928,10 @@
   .project-section div:nth-child(1) > p {
     font-size: 40px;
     margin: 40px 0;
+  }
+
+  .project-section .project-container .project-card {
+    padding: 30px;
   }
 
   .project-section .project-container .project-card .project-title {
@@ -681,6 +958,7 @@
   /* About Section */
   .about-section {
     width: 55%;
+    height: 950px;
     margin: 100px auto;
   }
 
@@ -702,6 +980,7 @@
   /* Skills Section */
   .skills-section {
     width: 55%;
+    height: 950px;
     margin: 100px auto;
   }
 
@@ -728,6 +1007,7 @@
   /* Contact Section */
   .contact-section {
     width: 55%;
+    height: 850px;
     margin: 100px auto;
   }
 
