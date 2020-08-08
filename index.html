@@ -37,6 +37,30 @@
           <div class="burger-menu">
             <div></div>
           </div>
+          <div class="nav-menu">
+            <ul>
+              <li>
+                <a href="#banner" id="nav-banner" class="nav-links">home</a>
+              </li>
+              <li>
+                <a href="#projects" id="nav-projects" class="nav-links"
+                  >my projects</a
+                >
+              </li>
+              <li>
+                <a href="#about" id="nav-about" class="nav-links">about me</a>
+              </li>
+              <li><a href="" id="nav-" class="nav-links">resume</a></li>
+              <li>
+                <a href="#skills" id="nav-skills" class="nav-links">skills</a>
+              </li>
+              <li>
+                <a href="#contact" id="nav-contact" class="nav-links"
+                  >get in touch</a
+                >
+              </li>
+            </ul>
+          </div>
         </div>
       </section>
 
@@ -104,9 +128,6 @@
           <div><p>Design & built by Joseph Seña</p></div>
         </div>
       </section>
-
-      <!-- Navigation Section on Desktops -->
-      <section class="nav-section-for-desktops"></section>
 
       <!-- Banner Section -->
       <section id="banner" class="banner-section">
@@ -214,7 +235,7 @@
               almost anything through technology.
             </p>
             <p>
-              I love creating things that live on the Web. A goal that I'm
+              I love creating things that live on the Web, a goal that I'm
               always aiming for. From <span class="design">design</span> to
               <span class="code">development</span>, up to
               <span class="deploy">deployment</span>, that is my objective.
@@ -351,14 +372,14 @@
         once: true,
       });
 
-      $("#message").on("keyup input", function () {
-        $(this)
-          .css("height", "auto")
-          .css(
-            "height",
-            this.scrollHeight + (this.offsetHeight - this.clientHeight)
-          );
-      });
+      // $("#message").on("keyup input", function () {
+      //   $(this)
+      //     .css("height", "auto")
+      //     .css(
+      //       "height",
+      //       this.scrollHeight + (this.offsetHeight - this.clientHeight)
+      //     );
+      // });
     </script>
   </body>
 </html>

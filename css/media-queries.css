@@ -163,6 +163,12 @@
 /* Start of font-gradual size increase */
 @media all and (min-width: 1024px) {
   /* Header Section */
+  .header-section .header-grid {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
   .header-section .header-grid .toggler-flex {
     position: relative;
     left: 2.5%;
@@ -172,12 +178,18 @@
     right: 2.5%;
     margin-top: 25px;
     margin-right: 0;
+    display: none;
   }
 
   .header-section .header-grid .burger-menu {
     right: 2.5%;
     margin-top: 25px;
     margin-right: 0;
+    display: none;
+  }
+
+  .header-section .header-grid .nav-menu {
+    display: block;
   }
 
   /* Navigation section */
@@ -528,6 +540,12 @@
     padding: 40px;
   }
 
+  .header-section .header-grid .nav-links {
+    font-size: 25px;
+    margin-left: 30px;
+    margin-right: 30px;
+  }
+
   /* .header-section .header-grid .toggler-flex {
     left: 30%;
   } */
@@ -789,6 +807,14 @@
     height: 35px;
     margin: 0px 25px;
   }
+
+  footer .scroll-up {
+    width: 50px;
+    height: 55px;
+    bottom: 100px;
+    right: 15%;
+    font-size: 25px;
+  }
 }
 
 @media all and (min-width: 3840px) {
@@ -797,9 +823,15 @@
     padding: 70px;
   }
 
-  .header-section .header-grid .toggler-flex {
-    left: 30%;
+  .header-section .header-grid .nav-links {
+    font-size: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
   }
+
+  /* .header-section .header-grid .toggler-flex {
+    left: 30%;
+  } */
 
   .header-section .header-grid .toggler-flex .pointer-left {
     width: 45px;

@@ -93,6 +93,14 @@ input:checked + .slider:before {
   background: #222;
 }
 
+.header-section .header-grid .nav-menu.light .nav-links {
+  color: #222;
+}
+
+.header-section .header-grid .nav-menu.light .nav-links::after {
+  border-bottom: 3px solid #1a73e8;
+}
+
 .nav-section.light {
   box-shadow: none;
   filter: drop-shadow(1px 3px 5px rgba(0, 0, 0, 0.5));

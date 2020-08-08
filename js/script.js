@@ -42,7 +42,8 @@ function toggleBurgerMenu_AfterCatalogClick() {
 // Toggle light theme
 function toggleLightTheme() {
   const lightThemeContainer = document.querySelector(".container");
-  const lightThemeNav = document.querySelector(".nav-section");
+  const lightThemeNavMenu = document.querySelector(".nav-menu");
+  const lightThemeNavBurger = document.querySelector(".nav-section");
   const lightThemeHeader = document.querySelector(".header-section");
   const lightThemeBanner = document.querySelector(".banner-section");
   const lightThemeAbout = document.querySelector(".about-section");
@@ -51,7 +52,8 @@ function toggleLightTheme() {
   const lightThemeFooter = document.querySelector("footer");
 
   lightThemeContainer.classList.toggle("light");
-  lightThemeNav.classList.toggle("light");
+  lightThemeNavMenu.classList.toggle("light");
+  lightThemeNavBurger.classList.toggle("light");
   lightThemeHeader.classList.toggle("light");
   lightThemeBanner.classList.toggle("light");
   lightThemeAbout.classList.toggle("light");
@@ -61,8 +63,8 @@ function toggleLightTheme() {
 }
 
 // Auto expand textarea
-$("#message").on("keyup input", function () {
-  $(this)
-    .css("height", "auto")
-    .css("height", this.scrollHeight + (this.offsetHeight - this.clientHeight));
-});
+// $("#message").on("keyup input", function () {
+//   $(this)
+//     .css("height", "auto")
+//     .css("height", this.scrollHeight + (this.offsetHeight - this.clientHeight));
+// });

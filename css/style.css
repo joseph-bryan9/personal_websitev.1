@@ -109,6 +109,7 @@ body {
   margin-top: 25px;
   margin-right: 25px;
 }
+
 .header-section .header-grid .burger-menu {
   position: absolute;
   top: 0;
@@ -163,17 +164,68 @@ body {
   transform: rotate(180deg);
 }
 
-/* Turns Lines Into X */
-/* .header-section .header-grid .toggler:checked + .burger-menu > div:before,
-.header-section .header-grid .toggler:checked + .burger-menu > div:after {
-  top: 0;
-  transform: rotate(90deg);
-} */
+.header-section .header-grid .nav-menu {
+  display: none;
+}
 
-/* Rotate On Hover When Checked */
-/* .header-section .header-grid .toggler:checked:hover + .burger-menu > div {
-  transform: rotate(225deg);
-} */
+.header-section .header-grid ul {
+  /* height: 100vh; */
+  display: flex;
+  flex-direction: row;
+  list-style-type: none;
+  align-items: center;
+  margin-top: 10px;
+  justify-content: flex-end;
+}
+
+.header-section .header-grid ul > li {
+  padding: 10px 0;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+}
+
+.header-section .header-grid .nav-links {
+  text-decoration: none;
+  text-transform: uppercase;
+  font-family: "Poppins", sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: #fff;
+  letter-spacing: 1px;
+  display: inline-block;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.header-section .header-grid ul > li:hover {
+  transform: translateY(-3px);
+}
+
+.header-section .header-grid .nav-links:after {
+  display: block;
+  content: "";
+  padding-top: 8px;
+  border-bottom: 3px solid #e0bb20;
+  transform: scaleX(0);
+  -webkit-transition: transform 0.9s ease-in-out;
+  -moz-transition: transform 0.9s ease-in-out;
+  -ms-transition: transform 0.9s ease-in-out;
+  -o-transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+}
+
+.header-section .header-grid .nav-links:hover:after {
+  transform: scaleX(1);
+}
+
+.header-section .header-grid .nav-links:after {
+  transform-origin: 0% 50%;
+}
 
 /* Navigation section */
 .nav-section {
