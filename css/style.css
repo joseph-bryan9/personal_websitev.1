@@ -9,6 +9,12 @@
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@700&family=Roboto&display=swap");
 
+body {
+  overflow-x: hidden;
+  font-family: "Poppins", sans-serif;
+  /* transition: 5s; */
+}
+
 /* My default styles */
 h1 {
   font-family: "Poppins", sans-serif;
@@ -21,11 +27,6 @@ button,
 textarea,
 ::placeholder {
   font-family: "Roboto", sans-serif;
-}
-
-body {
-  overflow-x: hidden;
-  /* transition: 5s; */
 }
 
 /* Start of styles */
@@ -555,8 +556,8 @@ h1 {
 .banner-section .my-email {
   display: flex;
   flex-direction: row;
-  justify-content: center;
-  margin-top: 40px;
+  justify-content: flex-start;
+  margin-top: 60px;
 }
 
 .banner-section .my-email .my-email-container {
@@ -565,10 +566,10 @@ h1 {
   align-items: center;
 }
 
-.banner-section .my-email .my-email-container .pointer-left {
+.banner-section .my-email .my-email-container .pointer-right {
   width: 25px;
   height: 25px;
-  background: url("../assets/svg/point-to-left.svg");
+  background: url("../assets/svg/point-to-right.svg");
   background-size: contain;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%);
@@ -597,8 +598,53 @@ h1 {
 
 .banner-section .my-email .my-email-container p {
   font-size: 16px;
-  margin: 0;
+  margin: 5px;
+  border-bottom: 2px solid transparent;
 }
+
+.banner-section .my-email .my-email-container .clip-it {
+  cursor: pointer;
+  background-size: 100% 200%;
+  background-image: linear-gradient(to bottom, #100e17 50%, #e0bb20 50%);
+  -webkit-transition: 0.8s;
+  -moz-transition: 0.8s;
+  -ms-transition: 0.8s;
+  -o-transition: 0.8s;
+  transition: 0.8s;
+  border-bottom: 2px solid #e0bb20;
+}
+
+.banner-section .my-email .my-email-container .clip-it:hover {
+  background-position: 0% -100%;
+  color: #100e17;
+  border-bottom: none;
+}
+
+/* .header-section .header-grid ul > li:hover {
+  transform: translateY(-3px);
+}
+
+.header-section .header-grid .nav-links:after {
+  display: block;
+  content: "";
+  padding-top: 8px;
+  border-bottom: 3px solid #e0bb20;
+  transform: scaleX(0);
+  -webkit-transition: transform 0.9s ease-in-out;
+  -moz-transition: transform 0.9s ease-in-out;
+  -ms-transition: transform 0.9s ease-in-out;
+  -o-transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+  transition: transform 0.9s ease-in-out;
+}
+
+.header-section .header-grid .nav-links:hover:after {
+  transform: scaleX(1);
+}
+
+.header-section .header-grid .nav-links:after {
+  transform-origin: 0% 50%;
+} */
 
 .banner-section .scroll-down-container {
   height: 5vh;

@@ -62,9 +62,9 @@ function toggleLightTheme() {
   lightThemeFooter.classList.toggle("light");
 }
 
-// Auto expand textarea
-// $("#message").on("keyup input", function () {
-//   $(this)
-//     .css("height", "auto")
-//     .css("height", this.scrollHeight + (this.offsetHeight - this.clientHeight));
+// Copy clipboard
+// tippy(".clip-it", {
+//   content: "Copied Email!",
+//   trigger: "click",
+//   touch: true,
 // });

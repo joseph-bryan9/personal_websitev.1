@@ -1,4 +1,23 @@
 @media all and (min-width: 200px) and (max-width: 480px) {
+  /* Banner Section */
+  .banner-section .my-email {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 0;
+  }
+
+  .banner-section .my-email .my-email-container {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    position: absolute;
+    bottom: 0px;
+  }
+
+  .banner-section .my-email .my-email-container .pointer-right {
+    display: none;
+  }
 }
 
 @media all and (min-width: 481px) and (max-width: 768px) {
@@ -190,6 +209,12 @@
 
   .header-section .header-grid .nav-menu {
     display: block;
+  }
+
+  .banner-section .my-email .my-email-container p {
+    font-size: 20px;
+    line-height: 45px;
+    margin: 10px;
   }
 
   /* Navigation section */
@@ -473,6 +498,11 @@
     font-size: 50px;
   }
 
+  .banner-section .my-email .my-email-container p {
+    font-size: 25px;
+    line-height: 45px;
+  }
+
   .banner-section .scroll-down-container .scroll-down {
     font-size: 25px;
   }
@@ -546,10 +576,6 @@
     margin-right: 30px;
   }
 
-  /* .header-section .header-grid .toggler-flex {
-    left: 30%;
-  } */
-
   .header-section .header-grid .toggler-flex .pointer-left {
     width: 45px;
     height: 45px;
@@ -600,6 +626,21 @@
   .banner-section .banner-container h1 > .artist-palette {
     width: 90px;
     height: 90px;
+  }
+
+  .banner-section .my-email {
+    margin-top: 100px;
+  }
+
+  .banner-section .my-email .my-email-container .pointer-right {
+    width: 45px;
+    height: 45px;
+  }
+
+  .banner-section .my-email .my-email-container p {
+    font-size: 35px;
+    line-height: 65px;
+    margin: 15px;
   }
 
   .banner-section .banner-container .social-medias > a {
@@ -829,10 +870,6 @@
     margin-right: 30px;
   }
 
-  /* .header-section .header-grid .toggler-flex {
-    left: 30%;
-  } */
-
   .header-section .header-grid .toggler-flex .pointer-left {
     width: 45px;
     height: 45px;
@@ -928,6 +965,21 @@
   .banner-section .banner-container h1 > .artist-palette {
     width: 100px;
     height: 100px;
+  }
+
+  .banner-section .my-email {
+    margin-top: 150px;
+  }
+
+  .banner-section .my-email .my-email-container .pointer-right {
+    width: 45px;
+    height: 45px;
+  }
+
+  .banner-section .my-email .my-email-container p {
+    font-size: 45px;
+    line-height: 80px;
+    margin: 15px;
   }
 
   .banner-section .banner-container .social-medias > a {
