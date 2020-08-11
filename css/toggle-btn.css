@@ -138,6 +138,22 @@ input:checked + .slider:before {
     brightness(91%) contrast(81%);
 }
 
+.banner-section.light .my-email .my-email-container .pointer-right {
+  filter: invert(15%) sepia(42%) saturate(15%) hue-rotate(68deg) brightness(93%)
+    contrast(105%);
+}
+
+.banner-section.light .my-email .my-email-container .clip-it {
+  background-image: linear-gradient(to bottom, #fff 50%, #1a73e8 50%);
+  border-bottom: 2px solid #1a73e8;
+}
+
+.banner-section.light .my-email .my-email-container .clip-it:hover {
+  background-position: 0% -100%;
+  color: #222;
+  border-bottom: none;
+}
+
 .header-section.light
   .header-grid
   .toggler-flex
