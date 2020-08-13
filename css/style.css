@@ -12,7 +12,6 @@
 body {
   overflow-x: hidden;
   font-family: "Poppins", sans-serif;
-  /* transition: 5s; */
 }
 
 /* My default styles */
@@ -31,21 +30,21 @@ textarea,
 
 /* Start of styles */
 .container {
-  background: #100e17;
+  /* background: #100e17; */
+  background: #0c0a11;
   color: #fff;
   min-width: 320px;
   width: 100%;
-  /* overflow-x: hidden; */
 }
 
 ::selection {
-  color: #100e17;
+  color: #0c0a11;
   background: #e0bb20;
 }
 
 /* Header Section */
 .header-section {
-  background: #100e17;
+  background: #0c0a11;
   box-shadow: 0rem 0 1rem #000;
   width: 100%;
   height: auto;
@@ -444,15 +443,18 @@ textarea,
 .banner-section {
   height: 100vh;
   padding: 20px;
+  background: transparent;
 }
 
 .banner-section .video-container {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
   height: 100%;
+  background: url(../assets/dark-bg.jpg) rgb(16, 14, 23, 0.7);
   overflow: hidden;
+  z-index: 1;
 }
 
 .banner-section .video-container video {
@@ -465,17 +467,16 @@ textarea,
   object-fit: cover;
 }
 
-.banner-section .video-container:after {
+/* .banner-section .video-container:after {
   content: "";
   z-index: 1;
   height: 100%;
   width: 100%;
   top: 0;
   left: 0;
-  /* background: rgba(0, 0, 0, 0.5); */
-  background: rgb(16, 14, 23, 0.8);
+  background: rgb(16, 14, 23, 0.7);
   position: absolute;
-}
+} */
 
 .banner-section .banner-container {
   display: flex;
@@ -638,7 +639,7 @@ h1 {
 .banner-section .my-email .my-email-container .clip-it {
   cursor: pointer;
   background-size: 100% 200%;
-  background-image: linear-gradient(to bottom, #100e17 50%, #e0bb20 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #e0bb20 50%);
   -webkit-transition: 0.8s;
   -moz-transition: 0.8s;
   -ms-transition: 0.8s;
@@ -649,7 +650,7 @@ h1 {
 
 .banner-section .my-email .my-email-container .clip-it:hover {
   background-position: 0% -100%;
-  color: #100e17;
+  color: #0c0a11;
   border-bottom: none;
 }
 
@@ -686,6 +687,8 @@ h1 {
   justify-content: flex-end;
   align-items: flex-end;
   animation: updown 6s ease-in-out infinite;
+  position: relative;
+  z-index: 2;
 }
 
 @keyframes updown {
@@ -704,6 +707,19 @@ h1 {
 
 .banner-section a {
   color: #fff;
+}
+
+/* Background */
+.background {
+  position: relative;
+  z-index: 2;
+  background: #0c0a11;
+
+  -webkit-box-shadow: 0 -20px 10px 5px #0c0a11;
+  -moz-box-shadow: 0 -20px 10px 5px #0c0a11;
+  -ms-box-shadow: 0 -20px 10px -10px #0c0a11;
+  -o-box-shadow: 0 -20px 10px 5px #0c0a11;
+  box-shadow: 0 -20px 10px 5px #0c0a11;
 }
 
 /* Project Section */
@@ -998,7 +1014,7 @@ textarea:focus {
   outline: none;
   transform: translateY(-8px);
   background: #fff;
-  color: #100e17;
+  color: #0c0a11;
   border-bottom: 3px solid #e0bb20;
 }
 
@@ -1056,7 +1072,7 @@ textarea:focus:-ms-input-placeholder {
   border: none;
   border-radius: 2px;
   background: #fff;
-  color: #100e17;
+  color: #0c0a11;
   cursor: pointer;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
@@ -1178,7 +1194,7 @@ footer .scroll-up.active {
 }
 
 footer .scroll-up > i {
-  color: #100e17;
+  color: #0c0a11;
   animation: updown 1.5s ease-in-out infinite;
 }
 
