@@ -442,10 +442,6 @@
 
 @media all and (min-width: 1331px) {
   /* Banner Section */
-  .banner-section .banner-container {
-    /* width: 70%; */
-  }
-
   .banner-section .banner-container .social-medias > a {
     width: 23px;
     height: 23px;

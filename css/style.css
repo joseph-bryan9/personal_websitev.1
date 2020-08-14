@@ -30,7 +30,6 @@ textarea,
 
 /* Start of styles */
 .container {
-  /* background: #100e17; */
   background: #0c0a11;
   color: #fff;
   min-width: 320px;
@@ -306,7 +305,6 @@ textarea,
 
 /* Turns Lines Into X */
 .nav-section .burger-menu > div::after {
-  /* top: 10px; */
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) rotate(-45deg);
@@ -734,32 +732,6 @@ h1 {
   border-bottom: none;
 }
 
-/* .header-section .header-grid ul > li:hover {
-  transform: translateY(-3px);
-}
-
-.header-section .header-grid .nav-links:after {
-  display: block;
-  content: "";
-  padding-top: 8px;
-  border-bottom: 3px solid #e0bb20;
-  transform: scaleX(0);
-  -webkit-transition: transform 0.9s ease-in-out;
-  -moz-transition: transform 0.9s ease-in-out;
-  -ms-transition: transform 0.9s ease-in-out;
-  -o-transition: transform 0.9s ease-in-out;
-  transition: transform 0.9s ease-in-out;
-  transition: transform 0.9s ease-in-out;
-}
-
-.header-section .header-grid .nav-links:hover:after {
-  transform: scaleX(1);
-}
-
-.header-section .header-grid .nav-links:after {
-  transform-origin: 0% 50%;
-} */
-
 .banner-section .scroll-down-container {
   height: 5vh;
   display: flex;
@@ -844,7 +816,6 @@ h1 {
 }
 
 .project-section .project-container .project-card .bar {
-  /* background-color: #2e3033; */
   background: #e0bb20;
   width: 100%;
   height: 3px;
@@ -853,8 +824,10 @@ h1 {
 }
 
 .project-section .project-container .project-card img {
-  width: 100%;
+  width: 80%;
   height: auto;
+  margin: 15px auto;
+  display: block;
 }
 
 .project-section .project-container .project-card img:hover {
@@ -1081,12 +1054,7 @@ textarea {
 
 .contact-section form textarea {
   resize: vertical;
-  /* max-height: 300px; */
-  /* min-height: 100px; */
   height: 45px;
-
-  /* box-sizing: padding-box; */
-  /* overflow: hidden; */
 }
 
 .contact-section form input:focus,
