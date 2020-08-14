@@ -63,21 +63,3 @@ function toggleLightTheme() {
   lightThemeContact.classList.toggle("light");
   lightThemeFooter.classList.toggle("light");
 }
-
-// Change image background to video background (mobile) upon loading for about 12 seconds
-var loader = document.querySelector(".video-container-dark");
-var videoBg = document.querySelector(".bg-dark-vid-mobile");
-
-// function load() {
-//   setTimeout(() => {
-//     loader.style.opacity = 0;
-//     loader.style.display = "none";
-
-//     videoBg.style.display = "block";
-//     videoBg.style.opacity = 1;
-//   }, 12000);
-// }
-
-// if (window.matchMedia("(max-width: 1200px)")) {
-//   load();
-// }
