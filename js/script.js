@@ -46,6 +46,7 @@ function toggleLightTheme() {
   const lightThemeNavBurger = document.querySelector(".nav-section");
   const lightThemeHeader = document.querySelector(".header-section");
   const lightThemeBanner = document.querySelector(".banner-section");
+  const lightThemeBackground = document.querySelector(".background");
   const lightThemeAbout = document.querySelector(".about-section");
   const lightThemeProject = document.querySelector(".project-section");
   const lightThemeContact = document.querySelector(".contact-section");
@@ -56,15 +57,27 @@ function toggleLightTheme() {
   lightThemeNavBurger.classList.toggle("light");
   lightThemeHeader.classList.toggle("light");
   lightThemeBanner.classList.toggle("light");
+  lightThemeBackground.classList.toggle("light");
   lightThemeAbout.classList.toggle("light");
   lightThemeProject.classList.toggle("light");
   lightThemeContact.classList.toggle("light");
   lightThemeFooter.classList.toggle("light");
 }
 
-// Copy clipboard
-// tippy(".clip-it", {
-//   content: "Copied Email!",
-//   trigger: "click",
-//   touch: true,
-// });
+// Change image background to video background (mobile) upon loading for about 12 seconds
+var loader = document.querySelector(".video-container-dark");
+var videoBg = document.querySelector(".bg-dark-vid-mobile");
+
+// function load() {
+//   setTimeout(() => {
+//     loader.style.opacity = 0;
+//     loader.style.display = "none";
+
+//     videoBg.style.display = "block";
+//     videoBg.style.opacity = 1;
+//   }, 12000);
+// }
+
+// if (window.matchMedia("(max-width: 1200px)")) {
+//   load();
+// }

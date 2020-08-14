@@ -129,6 +129,26 @@ input:checked + .slider:before {
     brightness(91%) contrast(81%);
 }
 
+.banner-section.light .video-container-dark {
+  display: none;
+}
+
+.banner-section.light .video-container-light {
+  display: block;
+}
+
+.banner-section.light .video-container-light:after,
+.banner-section.light .video-container-light-mobile:after {
+  content: "";
+  z-index: 1;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background: rgb(255, 255, 255, 0.2);
+  position: absolute;
+}
+
 .banner-section.light a {
   color: #222;
 }
@@ -144,7 +164,7 @@ input:checked + .slider:before {
 }
 
 .banner-section.light .my-email .my-email-container .clip-it {
-  background-image: linear-gradient(to bottom, #fff 50%, #1a73e8 50%);
+  background-image: linear-gradient(to bottom, transparent 50%, #1a73e8 50%);
   border-bottom: 2px solid #1a73e8;
 }
 
@@ -161,6 +181,18 @@ input:checked + .slider:before {
   > input:checked
   + .slider {
   background-color: #1a73e8;
+}
+
+.background.light {
+  position: relative;
+  z-index: 2;
+  background: #fff;
+
+  -webkit-box-shadow: 0 -20px 10px 5px #fff;
+  -moz-box-shadow: 0 -20px 10px 5px #fff;
+  -ms-box-shadow: 0 -20px 10px -10px #fff;
+  -o-box-shadow: 0 -20px 10px 5px #fff;
+  box-shadow: 0 -20px 10px 5px #fff;
 }
 
 .project-section.light .project-container .project-card {

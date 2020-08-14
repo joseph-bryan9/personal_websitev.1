@@ -1,3 +1,58 @@
+/* Style for video background for Mobiles and tablets */
+@media all and (max-width: 1023px) {
+  /* Banner Section */
+  .banner-section .video-container-dark {
+    display: none;
+  }
+
+  .banner-section .video-container-light {
+    display: none;
+  }
+
+  /* Toggle for Mobiles and Tablets */
+  .banner-section.light .video-container-dark-mobile {
+    display: none;
+  }
+
+  .banner-section.light .video-container-light-mobile {
+    display: block;
+  }
+
+  /* Toggle for Laptops and Desktops */
+  .banner-section.light .video-container-dark {
+    display: none;
+  }
+
+  .banner-section.light .video-container-light {
+    display: none;
+  }
+}
+
+/* Style for video background for Laptops and Desktops */
+@media all and (min-width: 1024px) {
+  /* Banner Section */
+  .banner-section .video-container-dark {
+    display: block;
+  }
+
+  .banner-section .video-container-dark-mobile {
+    display: none;
+  }
+
+  .banner-section .video-container-light-mobile {
+    display: none;
+  }
+
+  /* Toggle for Mobiles and Tablets */
+  .banner-section.light .video-container-dark-mobile {
+    display: none;
+  }
+
+  .banner-section.light .video-container-light-mobile {
+    display: none;
+  }
+}
+
 @media all and (min-width: 200px) and (max-width: 480px) {
   /* Banner Section */
   .banner-section .my-email {
