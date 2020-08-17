@@ -149,21 +149,23 @@
         <!-- For Laptop and Desktops Video Background -->
         <div class="video-container-dark">
           <video
-            src="assets/bg-dark.mp4"
+            
             autoplay
             muted
             loop
             class="bg-dark"
-          ></video>
+            id="bg-dark"
+          >
+        <source type="video/mp4" data-src="assets/bg-dark.mp4"></video>
         </div>
         <div class="video-container-light">
           <video
-            src="assets/bg-light.mp4"
             autoplay
             muted
             loop
             class="bg-light"
-          ></video>
+            id="bg-light"
+          ><source type="video/mp4" data-src="assets/bg-light.mp4"></video></video>
         </div>
 
         <!-- For Mobiles and Tablets Video Background -->
@@ -401,7 +403,12 @@
             <h1>Get in touch</h1>
             <p class="note">Let's build your awesome project today!</p>
           </div>
-          <form name="contact" method="post" action="?" data-netlify="">
+          <form
+            name="contact"
+            method="post"
+            data-netlify-recaptcha="true"
+            data-netlify="true"
+          >
             <div class="form-grid">
               <div>
                 <label for="name">Your Name:</label><br />
@@ -419,7 +426,7 @@
                   placeholder="Tell me about your project, needs, and timeline."
                 ></textarea
                 ><br /><br />
-
+                <div data-netlify-recaptcha="true"></div>
                 <button class="button-submit" name="send" type="submit">
                   Send <i class="fa fa-arrow-right" aria-hidden="true"></i>
                 </button>

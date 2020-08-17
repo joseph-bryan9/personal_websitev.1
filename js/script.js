@@ -63,3 +63,43 @@ function toggleLightTheme() {
   lightThemeContact.classList.toggle("light");
   lightThemeFooter.classList.toggle("light");
 }
+
+// When screen size is on mobile devices or tablets, run this script for video
+// For bg-dark video
+window.addEventListener("load", function () {
+  const bgDark = document.getElementById("bg-dark");
+
+  const visible =
+    bgDark.offsetWidth || bgDark.offsetHeight || bgDark.getClientRects().length;
+
+  if (visible) {
+    const children = bgDark.getElementsByTagName("source");
+
+    for (let i = 0; i < children.length; ++i) {
+      children[i].src = children[i].dataset.src;
+    }
+  }
+
+  bgDark.load();
+});
+
+// For bg-light video
+window.addEventListener("load2", function () {
+  const bgLight = document.getElementById("bg-light");
+
+  // what jQuery checks under the hood
+  const visible =
+    bgLight.offsetWidth ||
+    bgLight.offsetHeight ||
+    bgLight.getClientRects().length;
+
+  if (visible) {
+    const children = bgLight.getElementsByTagName("source");
+
+    for (let i = 0; i < children.length; ++i) {
+      children[i].src = children[i].dataset.src;
+    }
+  }
+
+  bgLight.load2();
+});
