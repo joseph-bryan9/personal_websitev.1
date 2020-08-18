@@ -62,6 +62,24 @@ function toggleLightTheme() {
   lightThemeProject.classList.toggle("light");
   lightThemeContact.classList.toggle("light");
   lightThemeFooter.classList.toggle("light");
+
+  // When screen size is on mobile devices or tablets, run this script for video
+  // For bg-light video
+  // window.addEventListener("load", function () {
+  const bgLight = document.getElementById("bg-light");
+
+  function displayVidLight(screenDesktop) {
+    if (screenDesktop.matches) {
+      // If media query matches
+      bgLight.src = "assets/bg-light.mp4";
+    }
+  }
+
+  const screenDesktop = window.matchMedia("(min-width: 1024px)");
+  // Call listener function at run time
+  displayVidLight(screenDesktop);
+  // Attach listener function on state changes
+  screenDesktop.addListener(displayVidLight);
 }
 
 // When screen size is on mobile devices or tablets, run this script for video
@@ -81,25 +99,4 @@ window.addEventListener("load", function () {
   }
 
   bgDark.load();
-});
-
-// For bg-light video
-window.addEventListener("load2", function () {
-  const bgLight = document.getElementById("bg-light");
-
-  // what jQuery checks under the hood
-  const visible =
-    bgLight.offsetWidth ||
-    bgLight.offsetHeight ||
-    bgLight.getClientRects().length;
-
-  if (visible) {
-    const children = bgLight.getElementsByTagName("source");
-
-    for (let i = 0; i < children.length; ++i) {
-      children[i].src = children[i].dataset.src;
-    }
-  }
-
-  bgLight.load2();
 });
