@@ -25,13 +25,24 @@ window,
     }
   });
 
-/* Toggle X icon on burger menu */
+/* Toggle X icon on burger menu / Show Side Menu */
 function toggleBurgerMenu() {
   var navSection = document.querySelector(".nav-section");
 
   navSection.classList.toggle("show");
+
+  /* When Side Menu is toggled (Open) make body position fixed */
+  // document.body.style.position = "fixed";
+  // document.body.style.top = `-${window.scrollY}px`;
 }
 
+/* When Side Menu is toggled off ( Closed) */
+// const scrollY = document.body.style.top;
+// document.body.style.position = "";
+// document.body.style.top = "";
+// window.scrollTo(0, parseInt(scrollY || "0") * -1);
+
+/* Automatic Side Menu Close */
 function toggleBurgerMenu_AfterCatalogClick() {
   setTimeout(function () {
     var navSection = document.querySelector(".nav-section");

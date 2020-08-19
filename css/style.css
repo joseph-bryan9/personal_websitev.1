@@ -1112,6 +1112,12 @@ textarea:focus:-ms-input-placeholder {
   color: #000;
 }
 
+.contact-section form .captcha {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
 .contact-section form .button-submit {
   width: 70%;
   display: block;
