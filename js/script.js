@@ -111,3 +111,24 @@ window.addEventListener("load", function () {
 
   bgDark.load();
 });
+
+// Form Validation
+const name = document.getElementById('name');
+const email = document.getElementById('email');
+const textareaMessage = document.getElementById('message');
+const form = document.getElementById('form');
+const errorElement = document.getElementById('error');
+
+
+form.addEventListener('submit', (e) => {
+  let messages = [];
+
+  if (name.value === '' || name.value == null || email.value === '' || email.value == null || textareaMessage.value === '' || textareaMessage.value == null) {
+    messages.push('Please fill out all the forms correctly.');
+  }
+
+  if (messages.length > 0) {
+    e.preventDefault()
+    errorElement.innerText = messages.join(', ');
+  }
+});
