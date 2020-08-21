@@ -73,7 +73,7 @@ textarea,
 .header-section .header-grid .toggler-flex .pointer-left {
   width: 25px;
   height: 25px;
-  background: url("../assets/svg/point-to-left.svg");
+  background: url("../assets/svg/point-to-left.svg") no-repeat;
   background-size: contain;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%);
@@ -332,7 +332,7 @@ textarea,
   display: flex;
   flex-direction: column;
   list-style-type: none;
-  margin-top: 100px;
+  margin-top: 50px;
 }
 
 .nav-section ul > li {
@@ -412,17 +412,17 @@ textarea,
 }
 
 .nav-section .social-medias .github-logo {
-  background: url("../assets/svg/github-logo.svg");
+  background: url("../assets/svg/github-logo.svg") no-repeat;
   background-size: contain;
 }
 
 .nav-section .social-medias .linkedin-logo {
-  background: url("../assets/svg/linkedin-logo.svg");
+  background: url("../assets/svg/linkedin-logo.svg") no-repeat;
   background-size: contain;
 }
 
 .nav-section .social-medias .twitter-logo {
-  background: url("../assets/svg/twitter-logo.svg");
+  background: url("../assets/svg/twitter-logo.svg") no-repeat;
   background-size: contain;
 }
 
@@ -552,7 +552,9 @@ textarea,
   width: 100%;
   top: 0;
   left: 0;
-  background: rgb(16, 14, 23, 0.9);
+  background: rgb(16, 14, 23);
+  opacity: 0.9;
+  -webkit-opacity: 0.9;
   position: absolute;
 }
 
@@ -646,17 +648,17 @@ h1 {
 }
 
 .banner-section .banner-container .social-medias .github-logo {
-  background: url("../assets/svg/github-logo.svg");
+  background: url("../assets/svg/github-logo.svg") no-repeat;
   background-size: contain;
 }
 
 .banner-section .banner-container .social-medias .linkedin-logo {
-  background: url("../assets/svg/linkedin-logo.svg");
+  background: url("../assets/svg/linkedin-logo.svg") no-repeat;
   background-size: contain;
 }
 
 .banner-section .banner-container .social-medias .twitter-logo {
-  background: url("../assets/svg/twitter-logo.svg");
+  background: url("../assets/svg/twitter-logo.svg") no-repeat;
   background-size: contain;
 }
 
@@ -879,12 +881,12 @@ h3 {
 }
 
 .project-section .project-container .project-card .links .github-logo {
-  background: url("../assets/svg/github-logo.svg");
+  background: url("../assets/svg/github-logo.svg") no-repeat;
   background-size: contain;
 }
 
 .project-section .project-container .project-card .links .external-logo {
-  background: url("../assets/svg/external-logo.svg");
+  background: url("../assets/svg/external-logo.svg") no-repeat;
   background-size: contain;
 }
 
@@ -1108,6 +1110,11 @@ textarea:-ms-input-placeholder {
 textarea:focus:-ms-input-placeholder {
   font-size: 13px;
   color: #000;
+}
+
+.contact-section form #error {
+  text-align: center;
+color: #e0bb20;
 }
 
 .contact-section form .button-submit {

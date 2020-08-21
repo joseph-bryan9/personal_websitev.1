@@ -53,6 +53,23 @@
   }
 }
 
+/* Navigation Menu (Side-menu) media query */
+@media all and (min-width: 375px) and (max-width: 479px) {
+  .nav-section {
+    width: 250px;
+  }
+
+  .nav-section ul {
+    margin-top: 80px !important;
+  }
+}
+
+@media all and (min-width: 480px) {
+  .nav-section ul {
+    margin-top: 100px !important;
+  }
+}
+
 @media all and (min-width: 200px) and (max-width: 480px) {
   /* Banner Section */
   .banner-section .my-email {
