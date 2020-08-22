@@ -30,24 +30,14 @@ function toggleBurgerMenu() {
   var navSection = document.querySelector(".nav-section");
 
   navSection.classList.toggle("show");
-
-  /* When Side Menu is toggled (Open) make body position fixed */
-  // document.body.style.position = "fixed";
-  // document.body.style.top = `-${window.scrollY}px`;
 }
-
-/* When Side Menu is toggled off ( Closed) */
-// const scrollY = document.body.style.top;
-// document.body.style.position = "";
-// document.body.style.top = "";
-// window.scrollTo(0, parseInt(scrollY || "0") * -1);
 
 /* Automatic Side Menu Close */
 function toggleBurgerMenu_AfterCatalogClick() {
   setTimeout(function () {
     var navSection = document.querySelector(".nav-section");
     navSection.classList.toggle("show");
-  }, 3000);
+  }, 1100);
 }
 
 // Toggle light theme
@@ -113,22 +103,28 @@ window.addEventListener("load", function () {
 });
 
 // Form Validation
-const name = document.getElementById('name');
-const email = document.getElementById('email');
-const textareaMessage = document.getElementById('message');
-const form = document.getElementById('form');
-const errorElement = document.getElementById('error');
+const name = document.getElementById("name");
+const email = document.getElementById("email");
+const textareaMessage = document.getElementById("message");
+const form = document.getElementById("form");
+const errorElement = document.getElementById("error");
 
-
-form.addEventListener('submit', (e) => {
+form.addEventListener("submit", (e) => {
   let messages = [];
 
-  if (name.value === '' || name.value == null || email.value === '' || email.value == null || textareaMessage.value === '' || textareaMessage.value == null) {
-    messages.push('Please fill out all the forms correctly.');
+  if (
+    name.value === "" ||
+    name.value == null ||
+    email.value === "" ||
+    email.value == null ||
+    textareaMessage.value === "" ||
+    textareaMessage.value == null
+  ) {
+    messages.push("Please fill out all the forms correctly.");
   }
 
   if (messages.length > 0) {
-    e.preventDefault()
-    errorElement.innerText = messages.join(', ');
+    e.preventDefault();
+    errorElement.innerText = messages.join(", ");
   }
 });

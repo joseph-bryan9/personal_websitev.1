@@ -30,6 +30,11 @@
 
 /* Style for video background for Laptops and Desktops */
 @media all and (min-width: 1024px) {
+  /* Header Section */
+  .header-section {
+    padding: 10px 25px;
+  }
+
   /* Banner Section */
   .banner-section .video-container-dark {
     display: block;
@@ -89,6 +94,11 @@
 
   .banner-section .my-email .my-email-container .pointer-right {
     display: none;
+  }
+
+  /* Contact Section */
+  .contact-section form textarea::placeholder {
+    line-height: 25px;
   }
 }
 
@@ -425,6 +435,8 @@
   .contact-section form textarea {
     min-height: 40px;
     height: 40px;
+    overflow: hidden;
+    padding: 5px 10px;
   }
 }
 
@@ -536,6 +548,12 @@
   .skills-section .skills-grid {
     grid-template-columns: repeat(6, 1fr);
     grid-gap: 30px;
+  }
+}
+
+@media all and (min-width: 1620px) {
+  .contact-section form textarea {
+    padding: 10px;
   }
 }
 
@@ -968,6 +986,10 @@
   .header-section .header-grid .burger-menu > div::after {
     top: 20px;
     height: 5px;
+  }
+
+  input:checked + .slider:before {
+    transform: translateX(57px);
   }
 
   /* Nav Section */

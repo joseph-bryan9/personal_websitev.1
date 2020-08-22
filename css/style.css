@@ -78,6 +78,7 @@ textarea,
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%);
   margin: 5px 15px;
+  margin-left: 10px;
   animation: sideways 1.5s ease-in-out infinite;
 }
 
@@ -159,16 +160,11 @@ textarea,
 }
 
 /* Toggler Animation */
-.header-section .header-grid .toggler:checked + .burger-menu > div {
-  transform: rotate(180deg);
-}
-
 .header-section .header-grid .nav-menu {
   display: none;
 }
 
 .header-section .header-grid ul {
-  /* height: 100vh; */
   display: flex;
   flex-direction: row;
   list-style-type: none;
@@ -240,11 +236,11 @@ textarea,
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  -webkit-transition: all 0.3s ease-in-out;
-  -moz-transition: all 0.3s ease-in-out;
-  -ms-transition: all 0.3s ease-in-out;
-  -o-transition: all 0.3s ease-in-out;
-  transition: all 0.3s ease-in-out;
+  -webkit-transition: all 0.3s ease-in;
+  -moz-transition: all 0.3s ease-in;
+  -ms-transition: all 0.3s ease-in;
+  -o-transition: all 0.3s ease-in;
+  transition: all 0.3s ease-in;
   opacity: 0;
 }
 
@@ -688,6 +684,7 @@ h1 {
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%);
   margin: 5px 15px;
+  margin-right: 10px;
   animation: sideways 1.5s ease-in-out infinite;
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
@@ -1057,6 +1054,8 @@ textarea {
 .contact-section form textarea {
   resize: vertical;
   height: 45px;
+  overflow: hidden;
+  font-size: 13px;
 }
 
 .contact-section form input:focus,
@@ -1066,6 +1065,11 @@ textarea:focus {
   background: #fff;
   color: #0c0a11;
   border-bottom: 3px solid #e0bb20;
+}
+
+.contact-section form input:invalid,
+textarea:invalid {
+  border: 1px solid red;
 }
 
 /* Place holder styles */
@@ -1090,17 +1094,6 @@ textarea:focus:-moz-placeholder {
   color: #000;
 }
 
-/* Firefox > 19 */
-textarea::-moz-placeholder {
-  font-size: 13px;
-  color: rgb(149, 147, 151, 0.7);
-}
-
-textarea:focus::-moz-placeholder {
-  font-size: 13px;
-  color: #000;
-}
-
 /* Internet Explorer 10 */
 textarea:-ms-input-placeholder {
   font-size: 13px;
@@ -1114,7 +1107,7 @@ textarea:focus:-ms-input-placeholder {
 
 .contact-section form #error {
   text-align: center;
-color: #e0bb20;
+  color: #e0bb20;
 }
 
 .contact-section form .button-submit {
@@ -1129,6 +1122,7 @@ color: #e0bb20;
   background: #fff;
   color: #0c0a11;
   cursor: pointer;
+  outline: none;
   -webkit-transition: 0.4s ease-in-out;
   -moz-transition: 0.4s ease-in-out;
   -ms-transition: 0.4s ease-in-out;
