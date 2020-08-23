@@ -1033,6 +1033,7 @@ label,
 
 .contact-section form input,
 textarea {
+  font-size: 16px;
   background: #17141d;
   margin: 30px 0;
   width: 100%;
@@ -1055,7 +1056,7 @@ textarea {
   resize: vertical;
   height: 45px;
   overflow: hidden;
-  font-size: 13px;
+  font-size: 16px;
 }
 
 .contact-section form input:focus,
@@ -1074,34 +1075,34 @@ textarea:invalid {
 
 /* Place holder styles */
 textarea::-webkit-input-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   color: rgb(149, 147, 151, 0.7);
 }
 
 textarea:focus::-webkit-input-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   color: #000;
 }
 
 /* Firefox < 19 */
 textarea:-moz-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   color: rgb(149, 147, 151, 0.7);
 }
 
 textarea:focus:-moz-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   color: #000;
 }
 
 /* Internet Explorer 10 */
 textarea:-ms-input-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   color: rgb(149, 147, 151, 0.7);
 }
 
 textarea:focus:-ms-input-placeholder {
-  font-size: 13px;
+  font-size: 16px;
   color: #000;
 }
 
