@@ -79,7 +79,7 @@ textarea,
     brightness(105%) contrast(102%);
   margin: 5px 15px;
   margin-left: 10px;
-  animation: sideways 1.5s ease-in-out infinite;
+  animation: sideways 1.2s ease-in-out infinite;
 }
 
 @keyframes sideways {
@@ -206,12 +206,12 @@ textarea,
   padding-top: 8px;
   border-bottom: 3px solid #e0bb20;
   transform: scaleX(0);
-  -webkit-transition: transform 0.9s ease-in-out;
-  -moz-transition: transform 0.9s ease-in-out;
-  -ms-transition: transform 0.9s ease-in-out;
-  -o-transition: transform 0.9s ease-in-out;
-  transition: transform 0.9s ease-in-out;
-  transition: transform 0.9s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .header-section .header-grid .nav-links:hover:after {
@@ -363,12 +363,12 @@ textarea,
   padding-top: 8px;
   border-bottom: 3px solid #e0bb20;
   transform: scaleX(0);
-  -webkit-transition: transform 0.9s ease-in-out;
-  -moz-transition: transform 0.9s ease-in-out;
-  -ms-transition: transform 0.9s ease-in-out;
-  -o-transition: transform 0.9s ease-in-out;
-  transition: transform 0.9s ease-in-out;
-  transition: transform 0.9s ease-in-out;
+  -webkit-transition: transform 0.3s ease-in-out;
+  -moz-transition: transform 0.3s ease-in-out;
+  -ms-transition: transform 0.3s ease-in-out;
+  -o-transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;
 }
 
 .nav-section .nav-links:hover:after {
@@ -396,11 +396,11 @@ textarea,
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .nav-section .social-medias > a:hover {
@@ -627,16 +627,16 @@ h1 {
 
 .banner-section .banner-container .social-medias > a {
   margin: 0 15px;
-  width: 20px;
-  height: 20px;
+  width: 23px;
+  height: 23px;
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .banner-section .banner-container .social-medias > a:hover {
@@ -685,7 +685,7 @@ h1 {
     brightness(105%) contrast(102%);
   margin: 5px 15px;
   margin-right: 10px;
-  animation: sideways 1.5s ease-in-out infinite;
+  animation: sideways 1.2s ease-in-out infinite;
   -webkit-transform: scaleX(-1);
   -moz-transform: scaleX(-1);
   -ms-transform: scaleX(-1);
@@ -802,11 +802,11 @@ h1 {
   left: 0px;
   padding: 20px;
   margin: 40px 0;
-  -webkit-transition: 0.4s ease-in-out;
-  -moz-transition: 0.4s ease-in-out;
-  -ms-transition: 0.4s ease-in-out;
-  -o-transition: 0.4s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .project-section .project-container .project-card .project-title {
@@ -831,11 +831,11 @@ h1 {
 
 .project-section .project-container .project-card img:hover {
   transform: scale(1.1);
-  -webkit-transition: 0.8s ease-in-out;
-  -moz-transition: 0.8s ease-in-out;
-  -ms-transition: 0.8s ease-in-out;
-  -o-transition: 0.8s ease-in-out;
-  transition: 0.8s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .project-section .project-container .project-card p,
@@ -866,11 +866,11 @@ h3 {
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .project-section .project-container .project-card .links > a:hover {
@@ -984,11 +984,11 @@ span {
   width: 30%;
   height: auto;
   filter: drop-shadow(1px 3px 1px rgba(0, 0, 0, 0.5));
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .skills-section .skills-grid .skills-flex p {
@@ -997,11 +997,11 @@ span {
 }
 
 .skills-section .skills-grid .skills-flex:hover p {
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 .skills-section .skills-grid .skills-flex:hover img {
@@ -1013,8 +1013,30 @@ span {
   padding: 30px 20px;
 }
 
-.contact-section .note {
+.contact-section > .contact-container {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  height: 23vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+@media only screen and (max-device-width: 450px) {
+  .contact-section > .contact-container {
+    height: 50vh;
+    justify-content: flex-start;
+  }
+}
+
+.contact-section > .contact-container > h1 {
+  text-align: center;
+}
+
+.contact-section > .contact-container > .note {
   line-height: 25px;
+  text-align: center;
 }
 
 .contact-section p,
@@ -1137,7 +1159,7 @@ textarea:focus:-ms-input-placeholder {
 
 .contact-section form .button-submit > i {
   margin-left: 3px;
-  animation: sideways 1.5s ease-in-out infinite;
+  animation: sideways 1.2s ease-in-out infinite;
 }
 
 @keyframes sideways {
@@ -1169,16 +1191,16 @@ footer .social-medias {
 
 footer .social-medias > a {
   margin: 0 10px;
-  width: 16px;
-  height: 16px;
+  width: 23px;
+  height: 23px;
   display: inline-block;
   filter: invert(81%) sepia(100%) saturate(0%) hue-rotate(95deg)
     brightness(105%) contrast(102%) drop-shadow(1px 3px 6px rgba(0, 0, 0, 0.5));
-  -webkit-transition: 0.5s ease-in-out;
-  -moz-transition: 0.5s ease-in-out;
-  -ms-transition: 0.5s ease-in-out;
-  -o-transition: 0.5s ease-in-out;
-  transition: 0.5s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
 }
 
 footer .social-medias > a:hover {
@@ -1225,11 +1247,11 @@ footer .scroll-up {
   cursor: pointer;
   right: 2.5%;
   text-decoration: none;
-  -webkit-transition: 0.2s ease-in-out;
-  -moz-transition: 0.2s ease-in-out;
-  -ms-transition: 0.2s ease-in-out;
-  -o-transition: 0.2s ease-in-out;
-  transition: 0.4s ease-in-out;
+  -webkit-transition: 0.25s ease-in-out;
+  -moz-transition: 0.25s ease-in-out;
+  -ms-transition: 0.25s ease-in-out;
+  -o-transition: 0.25s ease-in-out;
+  transition: 0.25s ease-in-out;
   opacity: 0;
   pointer-events: none;
 }
@@ -1245,7 +1267,7 @@ footer .scroll-up.active {
 
 footer .scroll-up > i {
   color: #0c0a11;
-  animation: updown 1.5s ease-in-out infinite;
+  animation: updown 1.2s ease-in-out infinite;
 }
 
 @keyframes updown {
